@@ -1,0 +1,62 @@
+page-top10 {
+
+}
+
+
+.icon-star{
+    color: rgb(238, 215, 88);
+    
+}
+
+.icon-usd{
+    color: green;
+}
+
+ion-row{
+    text-align: center;
+}
+
+.card{
+    background: white;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.background-color{
+    background-color: white;
+}
+
+#img-container{
+    position: relative;
+}
+
+#attracion-img{
+    
+}
+
+.checkbox{
+    background-color: red !important;
+}
+
+.btn-fab-favourite{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px ;
+    z-index: 2;
+}
+
+.btn-fab-check{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px ;
+    z-index: 2;
+}
