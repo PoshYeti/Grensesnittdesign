@@ -1,39 +1,71 @@
-.btn-homeScreenTopLeft{
+.btn-museum{
     border-top-left-radius: 15px;
 }
 
-.btn-homeScreenBottomLeft{
+.btn-restaurant{
     border-bottom-left-radius: 15px;
 }
 
-.btn-homeScreenTopRight{
+.btn-landmark{
     border-top-right-radius: 15px;
 }
 
-.btn-homeScreenBottomRight{
+.btn-hop{
     border-bottom-right-radius: 15px;
 }
 
-.btn-homeScreenTopLeft, .btn-homeScreenBottomLeft, .btn-homeScreenMiddle, 
-.btn-homeScreenTopRight, .btn-homeScreenBottomRight{
+.btn-museum, .btn-restaurant, .btn-shopping, 
+.btn-parks, .btn-landmark, .btn-hop{
     background-color: white;
     overflow: hidden;
     height: 80px;
     width: 30%;
-    top: 25px;
+    top: 20px;
+}
+
+.btn-star{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-route{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn-star, .btn-route{
+    background-color: white;
+    overflow: hidden;
+    height: 120px;
+    width: 40%;
+    top: 40px;
 }
 
 .btn-img{
+    top: 0px;
+}
+
+.btn-imgBig{
+    top: 10px;
+}
+
+.btn-img, .btn-imgBig{
     position: absolute;
     z-index: 10;
-    top: 0px;
     width: 50%;
 }
 
 .btn-Text{
+    top: 25px;
+}
+
+.btn-TextBig{
+    top: 40px;
+}
+
+.btn-Text, .btn-TextBig{
     position: relative;
     z-index: 20;
     color: black;
-    top: 25px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
