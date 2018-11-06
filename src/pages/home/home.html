@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar [color]="green">
+  <ion-navbar>
     <ion-title>
       <img class="logo" alt="logo" height="30px" padding-top="10px" src="assets/imgs/logo.png">
     </ion-title>
@@ -8,18 +8,33 @@
 <ion-content class="background" align="center">
   <img alt="logo" width="100%" src="assets/imgs/headerImage.png">
 
-  <button ion-button class="btn-homescreen" (click)="attBtnClick()">
+  <button ion-button class="btn-homeScreenTopLeft" (click)="attBtnClick()">
     <img class="btn-img" alt="museum" src="assets/imgs/museum.png">
     <p class="btn-Text">Museum</p>
   </button>
-  <a href="">
-    <img alt="shopping" width="30%" src="assets/imgs/shopping.png"></a>
-  <a href="">
-    <img alt="landmark" width="30%" src="assets/imgs/landmark.png"></a>
-  <a href="">
-    <img alt="restaurant" width="30%" src="assets/imgs/restaurants.png"></a>
-  <a href="">
-    <img alt="park" width="30%" src="assets/imgs/parks.png"></a>
-  <a href="">
-    <img alt="hopon" width="30%" src="assets/imgs/hopoffhopon.png"></a>
+
+  <button ion-button class="btn-homeScreenMiddle" (click)="attBtnClick()">
+    <img class="btn-img" alt="Shopping" src="assets/imgs/shop.png">
+    <p class="btn-Text">Shopping</p>
+  </button>
+
+  <button ion-button class="btn-homeScreenTopRight" (click)="attBtnClick()">
+    <img class="btn-img" alt="Shopping" src="assets/imgs/landmark.png">
+    <p class="btn-Text">Landmark</p>
+  </button>
+
+  <button ion-button class="btn-homeScreenBottomLeft" (click)="attBtnClick()">
+    <img class="btn-img" alt="Shopping" src="assets/imgs/restaurant.png">
+    <p class="btn-Text">Landmark</p>
+  </button>
+
+  <button ion-button class="btn-homeScreenMiddle" (click)="attBtnClick()">
+    <img class="btn-img" alt="Shopping" src="assets/imgs/park.png">
+    <p class="btn-Text">Parks</p>
+  </button>
+
+  <button ion-button class="btn-homeScreenBottomRight" (click)="attBtnClick()">
+    <img class="btn-img" alt="Shopping" src="assets/imgs/bus.png">
+    <p class="btn-Text">Hopp on/off</p>
+  </button>
 </ion-content>

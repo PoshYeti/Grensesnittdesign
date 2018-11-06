@@ -1,24 +1,39 @@
-page-home {
+.btn-homeScreenTopLeft{
+    border-top-left-radius: 15px;
 }
 
-.btn-homescreen{
-    //position: absolute;
-    border-top-left-radius: 15px;
-    padding: 0;
+.btn-homeScreenBottomLeft{
+    border-bottom-left-radius: 15px;
+}
+
+.btn-homeScreenTopRight{
+    border-top-right-radius: 15px;
+}
+
+.btn-homeScreenBottomRight{
+    border-bottom-right-radius: 15px;
+}
+
+.btn-homeScreenTopLeft, .btn-homeScreenBottomLeft, .btn-homeScreenMiddle, 
+.btn-homeScreenTopRight, .btn-homeScreenBottomRight{
+    background-color: white;
+    overflow: hidden;
     height: 80px;
     width: 30%;
-    overflow: hidden;
+    top: 25px;
 }
 
 .btn-img{
     position: absolute;
- z-index: 10;
+    z-index: 10;
+    top: 0px;
+    width: 50%;
 }
 
 .btn-Text{
     position: relative;
     z-index: 20;
     color: black;
-    top: 20px;
+    top: 25px;
     font-family: 'Times New Roman', Times, serif
 }
