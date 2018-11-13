@@ -1,8 +1,16 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button icon-only search>
+      <img class="img_search" alt="Search" src="assets/imgs/search.png">
+    </button>
     <ion-title>
-      <img class="logo" alt="logo" height="30px" padding-top="10px" src="assets/imgs/logo.png">
+      <img class="logo" alt="logo" height="30px" margin-top="auto" margin-bot="auto" src="assets/imgs/logo.png">
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="attBtnClickSettings()">
+        <img class="img_settings" alt="settings" src="assets/img/settings.png">
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 <ion-content class="background" align="center">
@@ -28,8 +36,8 @@
     <p class="btn-Text">Restaurant</p>
   </button>
 
-  <button ion-button class="btn-parks" (click)="attBtnClickParks()">
-    <img class="btn-img" alt="Parks" src="assets/imgs/park.png">
+  <button ion-button class="btn-park" (click)="attBtnClickPark()">
+    <img class="btn-img" alt="Park" src="assets/imgs/park.png">
     <p class="btn-Text">Parks</p>
   </button>
 
