@@ -1,5 +1,10 @@
 .img_header{background-color: white; height: 40px;}
 
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
 .title {
 position: relative;
     z-index: 20;
@@ -7,10 +12,29 @@ position: relative;
     font-family: 'Times New Roman', Times, serif; 
     font-style: normal;
 }
-
 .Language {
  position: relative;
     z-index: 20;
-    color: black;
+    color: pink;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.options {
+   background-color: white; 
+   width: 40%;
+   border-radius: 5px;
+}
+.contrast {
+    margin-top: 10%;
+}
+.headline {
+    text-align: left;
+    margin-left: 5%;
+    font-size: 18px; 
+}
+
+
+
+
+  
+

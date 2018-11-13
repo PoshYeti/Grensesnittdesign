@@ -4,13 +4,24 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="language" align="center">
+
+
+<ion-content class="content" align="center">
+<p class=contrast>
+  <ion-list>
+  <ion-item>
+    <ion-label>HIGH CONTRAST</ion-label> 
+    <ion-toggle class=contrast></ion-toggle>
+  </ion-item>
+</ion-list>
+</p>
+
 <p class=Language>
 <ion-list>
   <ion-item>
     <ion-label>LANGUAGE:</ion-label>
-    <ion-select [(ngModel)]="English">
-      <ion-option value="English">English</ion-option>
+    <ion-select class="options"  [(ngModel)]="language" >
+      <ion-option value="English" >English</ion-option>
       <ion-option value="Spanish">Spanish</ion-option>
       <ion-option value="Chineese">Chineese</ion-option>
       <ion-option value="German">German</ion-option>
@@ -18,4 +29,16 @@
   </ion-item>
 </ion-list>
 </p>
+
+<p class=headline>FAQ:</p>
+
+<ion-card>
+  <ion-card-content>
+   HOW CAN I SAVE AN ATTRACTION? <br>
+   You can favorite an attraction by pressing the hart in the right upper corner of attraction photo
+  </ion-card-content>
+</ion-card>
+
 </ion-content>
+
+
