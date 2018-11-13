@@ -1,18 +1,15 @@
-.btn-museum{
-    border-top-left-radius: 15px;
+#topBar{
+    background-color: green;
+    height: 50px;
 }
 
-.btn-restaurant{
-    border-bottom-left-radius: 15px;
-}
+.btn-museum{border-top-left-radius: 15px;}
 
-.btn-landmark{
-    border-top-right-radius: 15px;
-}
+.btn-restaurant{border-bottom-left-radius: 15px;}
 
-.btn-hop{
-    border-bottom-right-radius: 15px;
-}
+.btn-landmark{border-top-right-radius: 15px;}
+
+.btn-hop{border-bottom-right-radius: 15px;}
 
 .btn-museum, .btn-restaurant, .btn-shopping, 
 .btn-park, .btn-landmark, .btn-hop{
@@ -41,13 +38,9 @@
     top: 40px;
 }
 
-.btn-img{
-    top: 0px;
-}
+.btn-img{top: 0px;}
 
-.btn-imgBig{
-    top: 10px;
-}
+.btn-imgBig{top: 10px;}
 
 .btn-img, .btn-imgBig{
     position: absolute;
@@ -55,13 +48,9 @@
     width: 50%;
 }
 
-.btn-Text{
-    top: 25px;
-}
+.btn-Text{top: 25px;}
 
-.btn-TextBig{
-    top: 40px;
-}
+.btn-TextBig{top: 40px;}
 
 .btn-Text, .btn-TextBig{
     position: relative;
