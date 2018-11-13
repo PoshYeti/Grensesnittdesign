@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Top10Page } from '../top10/top10';
+import { settings} from '../settings/settings';
 
 @Component({
   selector: 'page-home',
