@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Top10Page } from '../top10/top10';
-import { settings} from '../settings/settings';
+import { SettingsPage} from '../settings/settings';
 
 @Component({
   selector: 'page-home',
@@ -12,6 +12,11 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+
+btnSettings(){
+  this.navCtrl.push(SettingsPage);
+}
+
   attBtnClickMuseum() {
     this.navCtrl.push(Top10Page);
   }

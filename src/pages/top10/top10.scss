@@ -21,6 +21,8 @@ ion-row{
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    transition: all 2s;
+    
 }
 
 .background-color{
@@ -33,6 +35,9 @@ ion-row{
 
 #attracion-img{
     
+}
+.btn-sort{
+    border-bottom: 5px solid hidden yellow;
 }
 
 .checkbox{
