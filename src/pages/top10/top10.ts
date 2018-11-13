@@ -4,6 +4,7 @@ import { applySourceSpanToStatementIfNeeded } from '@angular/compiler/src/output
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { FavouritesPage } from '../favourites/favourites';
+import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 
 
 /**
@@ -20,21 +21,28 @@ import { FavouritesPage } from '../favourites/favourites';
 })
 export class Top10Page {
   attractions: Card[];
+  pageType: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pageType = navParams.get('type');
+    console.log(this.pageType);
   }
 
   ngOnInit(): void {
     this.attractions = attractions.attractions;
   }
 
-  selected(){
+  openAttractionDetails(attraction: Card) {
+    this.navCtrl.push(AttractionDetailPage, {attraction});
+  }
+
+  selected() {
     return "visible";
   }
-  
-  sortByStarsClick(){
-    this.attractions.sort(function (a, b){
-        return b.stars - a.stars
+
+  sortByStarsClick() {
+    this.attractions.sort(function (a, b) {
+      return b.stars - a.stars
     });
   }
   sortByDistanceClick() {

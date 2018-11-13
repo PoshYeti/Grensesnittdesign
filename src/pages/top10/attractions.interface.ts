@@ -8,4 +8,7 @@ export interface Card {
     price: number;
     seen: boolean;
     favourite: boolean;
+    address: string;
+    webpage: string;
+    time: string;
 }

@@ -1,5 +1,5 @@
 <!--
-  Generated template for the Top10Page page.
+  Generated template for the AttractionDetailPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,41 +7,27 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>top10</ion-title>
+    <ion-title>{{attraction.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content id="page-content">
 
- 
-    <button ion-button class="btn-sort" [style.border-bottom]="selected()" (click)="sortByStarsClick()">Rating</button>
-    <button ion-button class="btn-sort" (click)="sortByDistanceClick()">Distance</button>
-    <button ion-button class="btn-sort" (click)="sortByPriceClick()">Price</button>
-  
-  <ion-card *ngFor="let attraction of attractions" (click)="openAttractionDetails(attraction)">
+  <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-    <div id="img-container">
-      <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}">
-      <button ion-fab class="btn-fab-check">
-        <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
-      </button>
-      <button ion-fab class="btn-fab-favourite">
-        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-      </button>
+  <button ion-fab class="btn-fab-check">
+    <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
+  </button>
+  <button ion-fab class="btn-fab-favourite">
+    <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+    <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+  </button>
 
-    </div>
-
-    <ion-item text-wrap class="background-color">
-      <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
-      <h2 class="attraction-text">{{attraction.name}}</h2>
-      <p class="attraction-text">{{attraction.desc}}</p>
-    </ion-item>
-
-    <ion-grid id="bottom-bar">
-      <ion-row>
+  <div id="attraction-image-text-container">
+    <ion-grid>
+      <ion-row class="img-bottom-row" align-items-center>
         <ion-col>
           <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
@@ -54,7 +40,7 @@
           <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
         </ion-col>
         <ion-col>
-          <p>{{attraction.distance +'m'}}</p>
+          <p id="distance-text">{{attraction.distance +'m'}}</p>
         </ion-col>
         <ion-col>
           <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
@@ -64,24 +50,34 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-
-  </ion-card>
-
+  </div>
 
 
-  <!--   <ion-card>
-    <img src="{{'../../assets/imgs/' + attraction.img}}" />
-    <ion-card-content>
-      <ion-card-title>
-        {{attraction.name}}
-      </ion-card-title>
-      <p>
-        {{attraction.desc}}
-      </p>
-    </ion-card-content>
-  </ion-card> -->
+  <ion-item text-wrap id="attraction-text-container">
+    <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
+    <h2 id="attraction-name-text">{{attraction.name}}</h2>
+    <p>{{attraction.desc}}</p>
+  </ion-item>
 
-
-
+  <ion-item text-wrap id="bottom-text-container">
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-center>
+          <div class="bottom-column">
+            <ion-icon id="address-icon" name="navigate" small></ion-icon>
+            <p id="address-text">{{attraction.address}}</p>
+          </div>
+        </ion-col>
+        <ion-col align-self-center>
+          <ion-icon id="time-icon" name="time" small></ion-icon>
+          <p id="time-text">{{attraction.time +'min'}}</p>
+        </ion-col>
+        <ion-col align-self-center>
+          <ion-icon name="planet" small></ion-icon>
+          <a id="webpage-text" href=attraction.webpage>Webpage</a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
 
 </ion-content>

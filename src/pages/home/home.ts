@@ -17,8 +17,8 @@ export class HomePage {
     this.navCtrl.push(SettingsPage);
   }
 
-  attBtnClickMuseum() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickMuseum(type: string) {
+    this.navCtrl.push(Top10Page, type);
   }
   attBtnClickShopping() {
     this.navCtrl.push(Top10Page);

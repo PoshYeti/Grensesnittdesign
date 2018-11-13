@@ -7,13 +7,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
+import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     Top10Page,
-    SettingsPage
+    SettingsPage,
+    AttractionDetailPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { SettingsPage } from '../pages/settings/settings';
     MyApp,
     HomePage,
     Top10Page,
-    SettingsPage
+    SettingsPage,
+    AttractionDetailPage
   ],
   providers: [
     StatusBar,
