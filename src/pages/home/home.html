@@ -1,18 +1,23 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button icon-only search>
-      <img class="img_search" alt="Search" src="assets/imgs/search.png">
-    </button>
-    <ion-title>
-      <img class="logo" alt="logo" height="30px" margin-top="auto" margin-bot="auto" src="assets/imgs/logo.png">
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="attBtnClickSettings()">
-        <img class="img_settings" alt="settings" src="assets/img/settings.png">
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3>
+        <button clear>
+          <img class="img_header" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <img class="logo" alt="logo" height="30px"src="assets/imgs/logo.png">
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button icon-only (click)="attBtnClickSettings()" clear>
+          <img class="img_header" alt="settings" src="assets/imgs/settings.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
+
 <ion-content class="background" align="center">
   <img alt="logo" width="100%" src="assets/imgs/headerImage.png">
 

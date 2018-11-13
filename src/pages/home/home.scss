@@ -1,7 +1,10 @@
-#topBar{
-    background-color: green;
-    height: 50px;
-}
+.ion_grid{background-color: white; height: 100%}
+
+.ion_row{height: 50%;}
+
+.logo{padding-top: 10px; height: 50px;}
+
+.img_header{background-color: white; height: 40px; padding-top: 10px;}
 
 .btn-museum{border-top-left-radius: 15px;}
 
@@ -20,15 +23,9 @@
     top: 20px;
 }
 
-.btn-star{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
+.btn-star{border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
 
-.btn-route{
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+.btn-route{border-top-right-radius: 15px; border-bottom-right-radius: 15px;}
 
 .btn-star, .btn-route{
     background-color: white;
@@ -42,11 +39,7 @@
 
 .btn-imgBig{top: 10px;}
 
-.btn-img, .btn-imgBig{
-    position: absolute;
-    z-index: 10;
-    width: 50%;
-}
+.btn-img, .btn-imgBig{position: absolute; z-index: 10; width: 50%;}
 
 .btn-Text{top: 25px;}
 
