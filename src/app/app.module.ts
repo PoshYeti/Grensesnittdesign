@@ -9,9 +9,7 @@ import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
-import { TabsPage } from '../pages/tabs/tabs';
 
-import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +20,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
     SearchPage,
     AttractionDetailPage,
-    TabsPage
+   
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+  
     
   ],
   bootstrap: [IonicApp],
@@ -40,7 +38,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
     SearchPage,
     AttractionDetailPage,
-    TabsPage
+   
 
   ],
   providers: [

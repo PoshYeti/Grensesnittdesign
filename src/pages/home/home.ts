@@ -51,12 +51,3 @@ export class HomePage {
   }
 
 }
-
-export class TabsPage {
-
-  homePage = HomePage;
-  favouritesPage = FavouritesPage;
-  searchPage = SearchPage;
-  visitedPage = VisitedPage;
-
-}

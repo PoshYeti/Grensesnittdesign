@@ -17,14 +17,13 @@
     </ion-row>
   </ion-grid>
 </ion-header>
-<!--
+
 <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-list>
         <ion-item *ngFor="let item of items">
             {{ item }}
     </ion-item>
     </ion-list>
--->
 <ion-content class="background" align="center">
   <img alt="logo" width="100%" src="assets/imgs/headerImage.png">
 
@@ -68,19 +67,3 @@
     <p class="btn-TextBig">Preplanned Routes</p>
   </button>
 </ion-content>
-
-<ion-tabs class="tabs-icon-top">
-
-    <ion-tab tabTitle="Home" tabIcon="home" [root]="homePage">
-  </ion-tab>
-  
-    <ion-tab tabTitle="Search" tabIcon="search" [root]="searchPage">
-  </ion-tab>
-  
-    <ion-tab tabTitle="Favourites" tabIcon="heart" [root]="favouritesPage">
-  </ion-tab>
-  
-    <ion-tab tabTitle="Visited" tabIcon="checkmark" [root]="visitedPage">
-  </ion-tab>
-  
-  </ion-tabs>
