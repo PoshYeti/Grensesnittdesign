@@ -18,28 +18,28 @@ export class HomePage {
   }
 
   attBtnClickMuseum(type: string) {
-    this.navCtrl.push(Top10Page, type);
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickShopping() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickShopping(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickLandmark() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickLandmark(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickRestaurant() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickRestaurant(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickPark() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickPark(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickHop() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickHop(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickStar() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickStar(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
-  attBtnClickRoute() {
-    this.navCtrl.push(Top10Page);
+  attBtnClickRoute(type: string) {
+    this.navCtrl.push(Top10Page, { type: type });
   }
 
 }

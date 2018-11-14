@@ -25,7 +25,6 @@ export class Top10Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pageType = navParams.get('type');
-    console.log(this.pageType);
   }
 
   ngOnInit(): void {
@@ -33,12 +32,21 @@ export class Top10Page {
   }
 
   openAttractionDetails(attraction: Card) {
-    this.navCtrl.push(AttractionDetailPage, {attraction});
+    this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
   selected() {
     return "visible";
   }
+
+  btnFavourite(attraction: Card) {
+    console.log(attraction.favourite)
+      let index = this.attractions.findIndex(obj => obj.name == attraction.name);
+      //console.log(this.attractions[index]);
+
+    
+  };
+
 
   sortByStarsClick() {
     this.attractions.sort(function (a, b) {
