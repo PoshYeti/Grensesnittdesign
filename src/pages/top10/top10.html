@@ -7,34 +7,47 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>top10</ion-title>
+    <ion-title>{{pageType}}</ion-title>
   </ion-navbar>
+
+  <ion-toolbar id="toolbar-filter">
+    <ion-segment>
+      <ion-segment-button value="Rating" (click)="sortByStarsClick()">
+        <ion-icon name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="Discance" (click)="sortByDistanceClick()">
+        <ion-icon name="walk"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="Price" (click)="sortByPriceClick()">
+        <ion-icon name="logo-usd"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 
 </ion-header>
 
 
 <ion-content padding>
 
- 
-    <button ion-button class="btn-sort" [style.border-bottom]="selected()" (click)="sortByStarsClick()">Rating</button>
-    <button ion-button class="btn-sort" (click)="sortByDistanceClick()">Distance</button>
-    <button ion-button class="btn-sort" (click)="sortByPriceClick()">Price</button>
-  
-  <ion-card *ngFor="let attraction of attractions" (click)="openAttractionDetails(attraction)">
+  <ion-card *ngFor="let attraction of attractionsByCat">
 
     <div id="img-container">
-      <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}">
-      <button ion-fab class="btn-fab-check">
-        <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
+      <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)">
+      <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
+        <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
+        <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
       </button>
-      <button ion-fab class="btn-fab-favourite">
+      <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
         <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
         <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
       </button>
-
+      <div id="trophy-container" *ngIf="isTop10(attraction)">
+        <ion-icon id="trophy-icon" name="trophy"></ion-icon>
+        <div id="trophy-text">10</div>
+      </div>
     </div>
 
-    <ion-item text-wrap class="background-color">
+    <ion-item text-wrap class="background-color" (click)="openAttractionDetails(attraction)">
       <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
       <h2 class="attraction-text">{{attraction.name}}</h2>
       <p class="attraction-text">{{attraction.desc}}</p>

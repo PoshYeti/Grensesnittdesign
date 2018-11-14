@@ -21,37 +21,56 @@ import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 })
 export class Top10Page {
   attractions: Card[];
+  attractionsByCat: Card[];
   pageType: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pageType = navParams.get('type');
-    console.log(this.pageType);
   }
 
   ngOnInit(): void {
     this.attractions = attractions.attractions;
+    this.attractionsByCat = this.attractions.filter(obj => {
+      return obj.tags.includes(this.pageType);
+    });
   }
 
   openAttractionDetails(attraction: Card) {
-    this.navCtrl.push(AttractionDetailPage, {attraction});
+    this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
-  selected() {
-    return "visible";
+  changeFavourite(attraction: Card) {
+    if(attraction.favourite) {
+      attraction.favourite = false;
+    } else {
+      attraction.favourite = true;
+    }
+  };
+
+  changeSeen(attraction: Card){
+    if(attraction.seen) {
+      attraction.seen = false;
+    } else {
+      attraction.seen = true;
+    }
+  }
+
+  isTop10(attraction: Card){
+      return attraction.tags.includes('Top 10');
   }
 
   sortByStarsClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return b.stars - a.stars
     });
   }
   sortByDistanceClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return a.distance - b.distance
     });
   }
   sortByPriceClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return a.price - b.price
     });
   }
