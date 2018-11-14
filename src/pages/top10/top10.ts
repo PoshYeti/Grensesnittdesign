@@ -54,17 +54,17 @@ export class Top10Page {
 
 
   sortByStarsClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return b.stars - a.stars
     });
   }
   sortByDistanceClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return a.distance - b.distance
     });
   }
   sortByPriceClick() {
-    this.attractions.sort(function (a, b) {
+    this.attractionsByCat.sort(function (a, b) {
       return a.price - b.price
     });
   }
