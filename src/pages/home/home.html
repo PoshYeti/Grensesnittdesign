@@ -2,7 +2,7 @@
   <ion-grid class="ion_grid">
     <ion-row class="ion_row">
       <ion-col col-3>
-        <button clear>
+        <button (click)="btnSearch()">
           <img class="img_header" alt="Search" src="assets/imgs/search.png">
         </button>
       </ion-col>
@@ -17,7 +17,14 @@
     </ion-row>
   </ion-grid>
 </ion-header>
-
+<!--
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+            {{ item }}
+    </ion-item>
+    </ion-list>
+-->
 <ion-content class="background" align="center">
   <img alt="logo" width="100%" src="assets/imgs/headerImage.png">
 

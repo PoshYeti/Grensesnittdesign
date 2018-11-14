@@ -7,8 +7,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
+import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
-import { TabsPage } from '../pages/tabs/tabs.module.ts';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,11 @@ import { TabsPage } from '../pages/tabs/tabs.module.ts';
     HomePage,
     Top10Page,
     SettingsPage,
+
+    SearchPage,
     AttractionDetailPage,
     TabsPage
+
   ],
   imports: [
     BrowserModule,
@@ -30,8 +34,11 @@ import { TabsPage } from '../pages/tabs/tabs.module.ts';
     HomePage,
     Top10Page,
     SettingsPage,
+
+    SearchPage,
     AttractionDetailPage,
     TabsPage
+
   ],
   providers: [
     StatusBar,

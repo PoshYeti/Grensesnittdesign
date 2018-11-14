@@ -6,6 +6,7 @@ import { FavouritesPage } from '../favourites/favourites';
 import { SearchPage } from '../search/search';
 import { VisitedPage } from '../visited/visited';
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,6 +19,10 @@ export class HomePage {
 
   btnSettings(){
     this.navCtrl.push(SettingsPage);
+  }
+  
+  btnSearch(){
+    this.navCtrl.push(SearchPage);
   }
 
   attBtnClickMuseum(type: string) {
