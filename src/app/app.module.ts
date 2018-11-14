@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
+import { TabsPage } from '../pages/tabs/tabs.module.ts';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

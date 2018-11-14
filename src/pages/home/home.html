@@ -61,3 +61,19 @@
     <p class="btn-TextBig">Preplanned Routes</p>
   </button>
 </ion-content>
+
+<ion-tabs class="tabs-icon-top">
+
+    <ion-tab tabTitle="Home" tabIcon="home" [root]="homePage">
+  </ion-tab>
+  
+    <ion-tab tabTitle="Search" tabIcon="search" [root]="searchPage">
+  </ion-tab>
+  
+    <ion-tab tabTitle="Favourites" tabIcon="heart" [root]="favouritesPage">
+  </ion-tab>
+  
+    <ion-tab tabTitle="Visited" tabIcon="checkmark" [root]="visitedPage">
+  </ion-tab>
+  
+  </ion-tabs>
