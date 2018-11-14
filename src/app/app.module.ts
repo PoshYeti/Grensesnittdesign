@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
+import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -24,10 +25,8 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     Top10Page,
     SettingsPage,
-    AttractionDetailPage,
-   
-    
-   
+    SearchPage,
+    AttractionDetailPage
   ],
   imports: [
     BrowserModule,
@@ -48,6 +47,7 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     Top10Page,
     SettingsPage,
+    SearchPage,
     AttractionDetailPage
   ],
   providers: [
