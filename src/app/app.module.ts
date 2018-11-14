@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
+import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
+    SearchPage,
     AttractionDetailPage
   ],
   imports: [
@@ -28,6 +30,7 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
+    SearchPage,
     AttractionDetailPage
   ],
   providers: [
