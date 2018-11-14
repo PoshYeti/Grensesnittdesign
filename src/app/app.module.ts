@@ -9,6 +9,16 @@ import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
+import { TabsPage } from '../pages/tabs/tabs';
+
+import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -16,12 +26,23 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
+
     SearchPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+    TabsPage
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    TranslateModule.forRoot ({
+      loader: {
+        provide: TranslateLoader, 
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
     
   ],
   bootstrap: [IonicApp],
@@ -30,8 +51,11 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
+
     SearchPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+    TabsPage
+
   ],
   providers: [
     StatusBar,
@@ -40,3 +64,6 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
   ]
 })
 export class AppModule {}
+
+
+
