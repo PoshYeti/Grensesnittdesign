@@ -2,6 +2,7 @@
 
 .content {
     font-family: 'Times New Roman', Times, serif;
+    text-align: left;
     
 }
 
@@ -33,16 +34,21 @@ position: relative;
     text-align: left;
     margin-left: 5%;
     font-size: 18px; 
+    text-decoration: underline;
+    margin-bottom: 0px;
 }
-.card {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: pink;
+.info {
+    color: #FF6F75;
+    text-align: center;
+    font-size: 18px;
 }
-  .toggle-text {
-    width: 10%;
-    color: black;
-  }
+.mail {
+    color: #FF6F75;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
 
 
 
