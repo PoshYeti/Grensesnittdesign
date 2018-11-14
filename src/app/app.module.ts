@@ -11,23 +11,20 @@ import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     Top10Page,
     SettingsPage,
-
     SearchPage,
-    AttractionDetailPage,
-   
-
+    AttractionDetailPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-  
-    
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,11 +32,8 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     HomePage,
     Top10Page,
     SettingsPage,
-
     SearchPage,
-    AttractionDetailPage,
-   
-
+    AttractionDetailPage
   ],
   providers: [
     StatusBar,

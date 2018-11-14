@@ -49,5 +49,4 @@ export class HomePage {
   attBtnClickRoute(type: string) {
     this.navCtrl.push(Top10Page, { type: type });
   }
-
 }
