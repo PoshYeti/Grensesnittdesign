@@ -21,6 +21,7 @@ import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 })
 export class Top10Page {
   attractions: Card[];
+  attractionsByCat: Card[];
   pageType: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -29,7 +30,13 @@ export class Top10Page {
 
   ngOnInit(): void {
     this.attractions = attractions.attractions;
+    this.attractionsByCat = this.attractions.filter(obj => {
+      return obj.tags.includes(this.pageType);
+    });
+    console.log(this.attractionsByCat);
   }
+
+  
 
   openAttractionDetails(attraction: Card) {
     this.navCtrl.push(AttractionDetailPage, { attraction });
@@ -41,10 +48,8 @@ export class Top10Page {
 
   btnFavourite(attraction: Card) {
     console.log(attraction.favourite)
-      let index = this.attractions.findIndex(obj => obj.name == attraction.name);
-      //console.log(this.attractions[index]);
-
-    
+    let index = this.attractions.findIndex(obj => obj.name == attraction.name);
+    //console.log(this.attractions[index]);
   };
 
 

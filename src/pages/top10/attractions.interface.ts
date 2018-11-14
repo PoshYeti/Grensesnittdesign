@@ -11,4 +11,5 @@ export interface Card {
     address: string;
     webpage: string;
     time: string;
+    tags: string;
 }
