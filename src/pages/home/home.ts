@@ -52,7 +52,7 @@ export class HomePage {
 
 }
 
-export class TabsPage {
+export class Tabs {
 
   homePage = HomePage;
   favouritesPage = FavouritesPage;

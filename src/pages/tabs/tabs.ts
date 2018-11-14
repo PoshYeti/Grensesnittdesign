@@ -6,9 +6,10 @@ import { SearchPage } from '../search/search';
 import { VisitedPage } from '../visited/visited';
 
 @Component({
-  templateUrl: 'build/pages/tabs/tabs.html'
+  selector: 'page-tabs',
+  templateUrl: 'tabs.html'
 })
-export class TabsPage {
+export class Tabs {
 
   homePage = HomePage;
   favouritesPage = FavouritesPage;

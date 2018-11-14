@@ -9,7 +9,7 @@ import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
-import { TabsPage } from '../pages/tabs/tabs';
+import { Tabs } from '../pages/tabs/tabs';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -19,17 +19,14 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HomePage,
     Top10Page,
     SettingsPage,
-
     SearchPage,
     AttractionDetailPage,
-    TabsPage
-
+    Tabs
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule
-    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,11 +34,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HomePage,
     Top10Page,
     SettingsPage,
-
     SearchPage,
     AttractionDetailPage,
-    TabsPage
-
+    Tabs
   ],
   providers: [
     StatusBar,
