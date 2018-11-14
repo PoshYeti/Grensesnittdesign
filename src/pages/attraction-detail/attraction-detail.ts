@@ -23,7 +23,7 @@ export class AttractionDetailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AttractionDetailPage');
-    console.log(this.attraction);
+ 
   }
   
 
