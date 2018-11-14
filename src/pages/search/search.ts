@@ -10,7 +10,7 @@ import attractions from '../../assets/data/attractions';
 export class SearchPage {
 
     searchQuery: string = '';
-    items: Card[];
+    items: string[];
 
   constructor(public navCtrl: NavController) {
     this.initializeItems();
@@ -26,7 +26,7 @@ export class SearchPage {
     
     if(val && val.trim() != '') {
         this.items = this.items.filter((item) => {
-            return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
         })
     }
   }
