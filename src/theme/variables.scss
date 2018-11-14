@@ -46,14 +46,26 @@ $colors: (
 $toolbar-background: white;
 $background-color: #e5e2e2;
 
-//toggle
-$toggle-ios-border-radius: 5px;
+//toggle-ios
+$toggle-ios-border-radius: 10px;
 $toggle-ios-background-color-off: white;
-$toggle-ios-handle-border-radius: 5px;
+$toggle-ios-handle-border-radius: 10px;
 $toggle-ios-width: 100px;
-$toggle-ios-height: 38px;
+$toggle-ios-height: 40px;
 $toggle-ios-handle-width:50px;
-$toggle-ios-handle-height:34px;
+$toggle-ios-handle-height:36px;
+
+//toggle-android
+$toggle-md-handle-background-color-off:white;
+$toggle-md-track-width:100px;
+$toggle-md-track-height: 40px;
+$toggle-md-track-background-color-off: white;
+$toggle-md-handle-width: 50px;
+$toggle-md-handle-height:40px;
+$toggle-md-handle-border-radius: 30%;
+
+$label-md-text-color: black;
+
 
 
 
@@ -71,7 +83,6 @@ $toggle-ios-handle-height:34px;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
 
 
 
