@@ -2,15 +2,13 @@
   <ion-grid class="ion_grid">
     <ion-row class="ion_row">
       <ion-col col-3>
-        <button clean (click)="btnSearch()">
-          <img class="img_header" alt="Search" src="assets/imgs/search.png">
-        </button>
+        
       </ion-col>
       <ion-col col-6>
         <img class="logo" alt="logo" height="30px" src="assets/imgs/logo.png">
       </ion-col>
       <ion-col col-3>
-        <button (click)="btnSettings()">
+        <button (click)="btnSettings()" clean>
           <img class="img_header" alt="settings" src="assets/imgs/settings.png">
         </button>
       </ion-col>
@@ -66,4 +64,31 @@
     <img class="btn-imgBig" alt="Preplanned routes" src="assets/imgs/preplanned.png">
     <p class="btn-TextBig">Preplanned Routes</p>
   </button>
+
+  <div class="footer">
+    <ion-grid class="ion_grid">
+      <ion-row class="ion_row">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" clean  class="col_home">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_search">
+          <button (click)="btnSearch()" clean class="col_search">
+            <img class="img_search" alt="Search" src="assets/imgs/search.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_fav">
+          <button (click)="btnFavourites()" clean class="col_fav">
+            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_seen">
+          <button (click)="btnSeen()" clean class="col_seen">
+            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
