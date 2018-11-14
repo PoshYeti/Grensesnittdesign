@@ -9,17 +9,37 @@ import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
+import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     Top10Page,
     SettingsPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+   
+    
+   
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    TranslateModule.forRoot ({
+      loader: {
+        provide: TranslateLoader, 
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
     
   ],
   bootstrap: [IonicApp],
@@ -37,3 +57,6 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
   ]
 })
 export class AppModule {}
+
+
+
