@@ -10,6 +10,14 @@ import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader (http, './assets/i18n/', '.json');
+}
+
 
 
 @NgModule({
@@ -20,10 +28,20 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
     SettingsPage,
     SearchPage,
     AttractionDetailPage
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule, 
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+
+    })
 
   ],
   bootstrap: [IonicApp],

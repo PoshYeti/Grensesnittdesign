@@ -1,6 +1,7 @@
+
 <ion-header>
   <ion-navbar>
-    <ion-title> SETTINGS </ion-title>
+    <ion-title> {{ 'SETTINGS' | translate }} </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -10,7 +11,7 @@
 <p class=contrast>
   <ion-list>
   <ion-item>
-    <ion-label>HIGH CONTRAST</ion-label> 
+    <ion-label> {{ 'HIGH CONTRAST' | translate }} </ion-label> 
     <ion-toggle [(ngModel)]="toggleValue" class=contrast> <div class="toggle-text">{{customText ? "YES" : "NO"}}</div></ion-toggle>
     
   </ion-item>
@@ -20,37 +21,39 @@
 <p class=Language>
 <ion-list>
   <ion-item>
-    <ion-label>LANGUAGE:</ion-label>
-    <ion-select class="options"  [(ngModel)]="language" >
-      <ion-option value="English" >English</ion-option>
-      <ion-option value="Spanish">Spanish</ion-option>
-      <ion-option value="Chineese">Chineese</ion-option>
-      <ion-option value="German">German</ion-option>
+    <ion-label>{{ 'LANGUAGE:' | translate }}</ion-label>
+    <ion-select class="options"  [(ngModel)]="lang" (ionChange)="switchLanguage()" >
+      <ion-option value="en" >English</ion-option>
+      <ion-option value="chi">Chineese</ion-option>
     </ion-select>
   </ion-item>
 </ion-list>
 </p>
 
-<p class=headline>FAQ:</p>
+<p class=headline> {{ 'FAQ:' | translate }}</p>
 
-<ion-card>
-  <ion-card-content>
-  <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
+<div class=slider>
+<ion-slides pager>
+  <ion-slide style="background-color: white">
+    <img class="imgs" alt="heartimg" src="assets/imgs/heart.png">
+    <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
   <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
-  <br>
-  <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
-  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
-  <br>
-  <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
-  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
-  <br>
-  <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
-  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
+  </ion-slide>
 
-</ion-card-content>
-</ion-card>
+  <ion-slide style="background-color: white">
+    <img class="imgs" alt="heartimg" src="assets/imgs/check.png" witdh=50px;>
+     <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
+  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
+  </ion-slide>
 
-<p class=info>FOR MORE HELP, PLEASE CONTACT</p>
+  <ion-slide style="background-color: white">
+     <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
+  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
+  </ion-slide>
+</ion-slides>
+</div>
+
+<p class=info>{{ 'FOR MORE HELP, PLEASE CONTACT' | translate}}</p>
 <p class=mail>support@support.com</p>
 
  <div class="footer">
@@ -58,7 +61,7 @@
       <ion-row class="ion_row">
         <ion-col col-3 class="col_home">
           <button (click)="btnHome()" clean  class="col_home">
-            <img class="img_home" alt="Search" src="assets/imgs/home.png">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png" height="22" width="22">
           </button>
         </ion-col>
         <ion-col col-3 class="col_search">
@@ -79,7 +82,6 @@
       </ion-row>
     </ion-grid>
   </div>
-
 
 </ion-content>
 
