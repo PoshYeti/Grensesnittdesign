@@ -19,7 +19,7 @@
 
   </ion-navbar>
 
-  <ion-toolbar no-border-bottom>
+  <ion-toolbar>
     <ion-segment id="toolbar-filter">
       <ion-segment-button value="Rating" (click)="sortByStarsClick()">
         <ion-icon class="icon-filter" name="star"></ion-icon>
@@ -36,7 +36,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content padding>
 
   <ion-card *ngFor="let attraction of attractionsByCat">
 
