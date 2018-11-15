@@ -1,4 +1,26 @@
 page-top10 {
+    .toolbar-md{
+        min-height: 40px;
+        height: 40px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .toolbar-background{
+        background-color: map-get($colors, primary)
+       
+        
+    }
+
+    #navbar{
+        background-color: white;
+        width: 100%;
+    }
+
+    .icon-filter{
+        color: white;
+    }
 
 }
 
@@ -8,19 +30,50 @@ page-top10 {
     
 }
 
+
+
 ion-title{
     width: 100%;
     text-align: center;
     position: absolute;
+    
+}
+
+
+#img-settings{
+    position: absolute;
+    top: 14px;
+    right: 5%;
+    height: 35px;
+    padding: 0;
+}
+
+#header-icon-text-container{
+    position: relative;
+    margin-top: 20px;
+ 
+}
+
+#icon-header{
+    position: absolute;
+    height: 35px;
+    left: 20%;
+    top:- 8px;
+    
 }
 
 .back-button{
     position: absolute;
     z-index: 100;
+   
+
 }
 
-#toolbar-filer{
-    border-top: 1px solid rgba($color: gray, $alpha: 0.5);
+
+
+#toolbar-filter{
+    
+    
 }
 
 .icon-usd{
@@ -46,11 +99,35 @@ ion-row{
 
 #img-container{
     position: relative;
+    border: 3px solid black;
 }
 
-#attracion-img{
+#trophy-container{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
     
 }
+
+#trophy-icon{
+    font-size: 35px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgba(238, 215, 88, 0.671);
+    position: relative;
+    z-index: 10;
+}
+
+#trophy-text{
+    left: 8px;
+    top: 8px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 11;
+}
+
+
 .btn-sort{
     border-bottom: 5px solid hidden yellow;
 }
