@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import attractions from '../../assets/data/attractions';
+import { Card } from './attractions.interface';
 
 @Component({
   selector: 'page-search',
@@ -10,23 +11,24 @@ import attractions from '../../assets/data/attractions';
 export class SearchPage {
 
     searchQuery: string = '';
-    items: string[];
+    attractions: Card[];
+    
 
   constructor(public navCtrl: NavController) {
-    this.initializeItems();
+    this.initializeAttractions();
   }
   
-  initializeItems() {
-    this.items = attractions.attractions;
+  initializeAttractions() {
+    this.attractions = attractions.attractions;
   }
   
   getItems(ev: any) {
-    this.initializeItems();
+    this.initializeAttractions();
     const val = ev.target.value;
     
     if(val && val.trim() != '') {
-        this.items = this.items.filter((item) => {
-            return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        this.attractions = this.attractions.filter((attractions) => {
+            return (attractions.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
         })
     }
   }
