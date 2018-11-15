@@ -23,7 +23,8 @@ export default
             "address": "Kirsten Flagstads Plass 1, 0150 Oslo",
             "webpage": "https://operaen.no/",
             "time": "60-120",
-            "tags": "Landmarks, Hop On/Off, Top 10"
+            "tags": "Landmarks, Hop On/Off, Top 10",
+            "GUI_isOpen": false
         },
         {
             "name": "Rådhuset",
@@ -38,7 +39,8 @@ export default
             "address": "Rådhusplassen 1, 0037 Oslo",
             "webpage": "https://www.oslo.kommune.no/politikk-og-administrasjon/radhuset/#gref",
             "time": "5-15",
-            "tags": "Landmarks, Hop On/Off"
+            "tags": "Landmarks, Hop On/Off",
+            "GUI_isOpen": false
         },
         {
             "name": "Holmenkollen",
@@ -53,7 +55,8 @@ export default
             "address": "Kongeveien 5, 0787 Oslo",
             "webpage": "https://www.skiforeningen.no/holmenkollen",
             "time": "60-120",
-            "tags": "Top 10, Museums, Landmarks"
+            "tags": "Top 10, Museums, Landmarks",
+            "GUI_isOpen": false
         }
     ]
 }

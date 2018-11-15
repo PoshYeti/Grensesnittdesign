@@ -8,12 +8,49 @@
 
 <ion-content class="content" align="center">
 <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-content>
+<ion-list class="search-list">
+    <!--tier 1-->
+    <ion-list-header *ngFor="let attraction of attractions; let i = index" no-lines no-padding>
+        <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': attraction.GUI_isOpen, 'section': !attraction.GUI_isOpen}">
+            <ion-icon item-left name="arrow-forward" *ngIf="!attraction.GUI_isOpen"></ion-icon>
+            <ion-icon item-left name="arrow-down" *ngIf="attraction.GUI_isOpen"></ion-icon>
+            {{ attraction.name }}
+        </button>
+        
+        <ion-list *ngIf="attraction.GUI_isOpen" no-lines>
+            <!--tier 2-->
+            <ion-list-header no-padding>
+                <div id="img-container" no-padding no-lines>
+                    <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)" no-lines no-padding>
+                    <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
+                        <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
+                        <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
+                    </button>
+                    <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
+                        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+                        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+                    </button>
+                    <div id="trophy-container" *ngIf="isTop10(attraction)" no-padding no-lines>
+                        <ion-icon id="trophy-icon" name="trophy"></ion-icon>
+                    <div id="trophy-text">10</div>
+                </div>
+                </div>
+            </ion-list-header>
+        </ion-list>
+    </ion-list-header>
+</ion-list>
+</ion-content>
+
+<!--
+<ion-content class="content" align="center">
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 <ion-list>
   <ion-item *ngFor="let attraction of attractions">
     <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon> {{ attraction.name }}
   </ion-item>
 </ion-list>
-
+-->
 <!--
 <ion-card *ngFor="let attraction of attractions" (click)="openAttractionDetails(attraction)">
 

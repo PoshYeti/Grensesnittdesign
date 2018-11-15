@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
+import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 
 @Component({
   selector: 'page-search',
@@ -20,6 +21,34 @@ export class SearchPage {
   
   initializeAttractions() {
     this.attractions = attractions.attractions;
+  }
+  
+  toggleSection(i) {
+    this.attractions[i].GUI_isOpen = !this.attractions[i].GUI_isOpen;
+  }
+  
+  openAttractionDetails(attraction: Card) {
+    this.navCtrl.push(AttractionDetailPage, { attraction });
+  }
+  
+  changeSeen(attraction: Card){
+    if(attraction.seen) {
+      attraction.seen = false;
+    } else {
+      attraction.seen = true;
+    }
+  }
+  
+  changeFavourite(attraction: Card) {
+    if(attraction.favourite) {
+      attraction.favourite = false;
+    } else {
+      attraction.favourite = true;
+    }
+  };
+  
+  isTop10(attraction: Card){
+      return attraction.tags.includes('Top 10');
   }
   
   getItems(ev: any) {

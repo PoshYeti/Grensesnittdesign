@@ -12,4 +12,5 @@ export interface Card {
     webpage: string;
     time: string;
     tags: string;
+    GUI_isOpen: boolean;
 }
