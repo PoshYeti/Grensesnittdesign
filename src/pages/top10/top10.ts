@@ -5,6 +5,7 @@ import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { FavouritesPage } from '../favourites/favourites';
 import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
+import { SettingsPage } from '../settings/settings';
 
 
 /**
@@ -23,9 +24,12 @@ export class Top10Page {
   attractions: Card[];
   attractionsByCat: Card[];
   pageType: string;
+  pageIcon: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pageType = navParams.get('type');
+    this.pageIcon = navParams.get('icon');
+    console.log(this.pageIcon);
   }
 
   ngOnInit(): void {
@@ -33,25 +37,31 @@ export class Top10Page {
     this.attractionsByCat = this.attractions.filter(obj => {
       return obj.tags.includes(this.pageType);
     });
-    console.log(this.attractionsByCat);
   }
-
-  
 
   openAttractionDetails(attraction: Card) {
     this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
-  selected() {
-    return "visible";
-  }
-
-  btnFavourite(attraction: Card) {
-    console.log(attraction.favourite)
-    let index = this.attractions.findIndex(obj => obj.name == attraction.name);
-    //console.log(this.attractions[index]);
+  changeFavourite(attraction: Card) {
+    if(attraction.favourite) {
+      attraction.favourite = false;
+    } else {
+      attraction.favourite = true;
+    }
   };
 
+  changeSeen(attraction: Card){
+    if(attraction.seen) {
+      attraction.seen = false;
+    } else {
+      attraction.seen = true;
+    }
+  }
+
+  isTop10(attraction: Card){
+      return attraction.tags.includes('Top 10');
+  }
 
   sortByStarsClick() {
     this.attractionsByCat.sort(function (a, b) {
@@ -70,6 +80,10 @@ export class Top10Page {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad Top10Page');
+  }
+
+  btnSettings() {
+    this.navCtrl.push(SettingsPage);
   }
 
 }

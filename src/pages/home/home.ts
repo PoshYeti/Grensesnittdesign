@@ -25,27 +25,21 @@ export class HomePage {
     this.navCtrl.push(SearchPage);
   }
 
-  attBtnClickMuseum(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
+
+  attBtnClick(type: string, icon: string) {
+    this.navCtrl.push(Top10Page, {
+      type: type,
+      icon: icon
+    });
   }
-  attBtnClickShopping(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
+
+  attBtnClickMuseum(type: string, icon: string) {
+    this.navCtrl.push(Top10Page, { 
+      type: type,
+      icon: icon
+    });
   }
-  attBtnClickLandmark(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
-  }
-  attBtnClickRestaurant(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
-  }
-  attBtnClickPark(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
-  }
-  attBtnClickHop(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
-  }
-  attBtnClickStar(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
-  }
+ 
   attBtnClickRoute(type: string) {
     this.navCtrl.push(Top10Page, { type: type });
   }
