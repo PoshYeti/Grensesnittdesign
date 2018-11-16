@@ -54,8 +54,8 @@
     </div>
 
     <ion-item class="background-color" (click)="openAttractionDetails(attraction)">
-      <h2 class="attraction-text">{{attraction.name}}</h2>
-      <p class="attraction-text">{{attraction.desc}}</p>
+      <h2 class="attraction-text">{{attraction.name | translate}}</h2>
+      <p class="attraction-text">{{attraction.desc | translate }}</p>
     </ion-item>
 
     <ion-grid id="bottom-bar">
