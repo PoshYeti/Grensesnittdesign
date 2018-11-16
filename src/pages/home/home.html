@@ -22,48 +22,49 @@
     </ion-list>
 <ion-content class="background">
   <img alt="logo" width="100%" src="assets/imgs/headerImage.png">
-
   <div class="button-col-size">
     <button ion-button class="btn-museum" (click)="attBtnClick('Museums', 'museum.png')">
       <img class="btn-img" alt="Museum" src="assets/imgs/museum.png">
-      <p class="btn-Text">Museum</p>
+      <p class="btn-Text">{{ 'MUSEUM' | translate }}</p>
     </button>
+
     <button ion-button class="btn-shopping" (click)="attBtnClick('Shopping', 'shop.png')">
       <img class="btn-img" alt="Shopping" src="assets/imgs/shop.png">
-      <p class="btn-Text">Shopping</p>
+      <p class="btn-Text">{{ 'SHOPPING' | translate }}</p>
     </button>
+
     <button ion-button class="btn-landmark" (click)="attBtnClick('Landmarks', 'landmark.png')">
       <img class="btn-img" alt="Landmark" src="assets/imgs/landmark.png">
-      <p class="btn-Text">Landmark</p>
+      <p class="btn-Text">{{ 'LANDMARK' | translate }}</p>
     </button>
   </div>
 
   <div class="button-col-size">
     <button ion-button class="btn-restaurant" (click)="attBtnClick('Restaurants', 'restaurant.png')">
       <img class="btn-img" alt="Restaurant" src="assets/imgs/restaurant.png">
-      <p class="btn-Text">Restaurant</p>
+      <p class="btn-Text"> {{ 'RESTAURANT' | translate }} </p>
     </button>
 
     <button ion-button class="btn-park" (click)="attBtnClick('Parks', 'park.png')">
       <img class="btn-img" alt="Park" src="assets/imgs/park.png">
-      <p class="btn-Text">Parks</p>
+      <p class="btn-Text">{{ 'PARKS' | translate }}</p>
     </button>
 
     <button ion-button class="btn-hop" (click)="attBtnClick('Hop On/Off', 'bus.png')">
       <img class="btn-img" alt="Hopp on/off" src="assets/imgs/bus.png">
-      <p class="btn-Text">Hopp on/off</p>
+      <p class="btn-Text">{{ 'HOP ON/OFF' | translate }}</p>
     </button>
   </div>
 
   <div class="button-col-size-big">
     <button ion-button class="btn-star" (click)="attBtnClick('Top 10', 'star.png')">
       <img class="btn-imgBig" alt="Top 10" src="assets/imgs/star.png">
-      <p class="btn-TextBig">Top 10</p>
+      <p class="btn-TextBig">{{ 'TOP 10' | translate }}</p>
     </button>
 
     <button ion-button class="btn-route" (click)="attBtnClickRoute('Preplanned Routes', 'preplanned')">
       <img class="btn-imgBig" alt="Preplanned routes" src="assets/imgs/preplanned.png">
-      <p class="btn-TextBig">Preplanned Routes</p>
+      <p class="btn-TextBig">{{ 'PREPLANNED ROUTES' | translate }}</p>
     </button>
   </div>
 
