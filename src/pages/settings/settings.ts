@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavController, NavController, NavController, NavController, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import {TranslateService} from '@ngx-translate/core';
 import { FavouritesPage } from '../favourites/favourites';
 import { SearchPage } from '../search/search';
