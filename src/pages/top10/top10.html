@@ -10,7 +10,7 @@
     <ion-title id="navbar">
       <div id="header-icon-text-container">
       <img id="icon-header" alt={{pageType}} src="{{'assets/imgs/' + pageIcon}}">
-        {{pageType}}
+        {{ pageType | translate }}
       </div>
       <button (click)="btnSettings()" clean>
         <img id="img-settings" alt="settings" src="assets/imgs/settings.png">
