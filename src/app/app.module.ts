@@ -12,6 +12,14 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
 import { FavouritesPage } from '../pages/favourites/favourites';
 import { VisitedPage } from '../pages/visited/visited';
 
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader (http, './assets/i18n/', '.json');
+}
+
 
 
 @NgModule({
@@ -28,6 +36,15 @@ import { VisitedPage } from '../pages/visited/visited';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule, 
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+
+    })
 
   ],
   bootstrap: [IonicApp],
