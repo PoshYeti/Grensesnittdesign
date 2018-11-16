@@ -14,18 +14,21 @@
 
 
 <ion-content id="page-content">
+  <div id="img-container">
+    <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-  <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
-
-  <button ion-fab class="btn-fab-check">
-    <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
-  </button>
-  <button ion-fab class="btn-fab-favourite">
-    <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-    <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-    
-  </button>
-
+    <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
+      <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
+      <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
+    </button>
+    <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
+      <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+      <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+    </button>
+    <div id="trophy-container" *ngIf="isTop10(attraction)">
+      <img id="top10-icon" alt="Top 10" src="assets/imgs/star.png">
+    </div>
+  </div>
   <div id="attraction-image-text-container">
     <ion-grid>
       <ion-row class="img-bottom-row" align-items-center>

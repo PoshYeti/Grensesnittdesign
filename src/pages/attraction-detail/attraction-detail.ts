@@ -25,6 +25,24 @@ export class AttractionDetailPage {
     console.log('ionViewDidLoad AttractionDetailPage');
  
   }
-  
+  isTop10(attraction: Card) {
+    return attraction.tags.includes('Top 10');
+  }
+
+  changeFavourite(attraction: Card) {
+    if (attraction.favourite) {
+      attraction.favourite = false;
+    } else {
+      attraction.favourite = true;
+    }
+  };
+
+  changeSeen(attraction: Card) {
+    if (attraction.seen) {
+      attraction.seen = false;
+    } else {
+      attraction.seen = true;
+    }
+  }
 
 }
