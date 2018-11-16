@@ -36,9 +36,9 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-  <ion-card *ngFor="let attraction of attractionsByCat">
+  <ion-card padding *ngFor="let attraction of attractionsByCat">
 
     <div id="img-container">
       <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)">
@@ -56,8 +56,7 @@
       </div>
     </div>
 
-    <ion-item text-wrap class="background-color" (click)="openAttractionDetails(attraction)">
-      <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
+    <ion-item class="background-color" (click)="openAttractionDetails(attraction)">
       <h2 class="attraction-text">{{attraction.name}}</h2>
       <p class="attraction-text">{{attraction.desc}}</p>
     </ion-item>
@@ -86,24 +85,32 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-
   </ion-card>
 
-
-
-  <!--   <ion-card>
-    <img src="{{'../../assets/imgs/' + attraction.img}}" />
-    <ion-card-content>
-      <ion-card-title>
-        {{attraction.name}}
-      </ion-card-title>
-      <p>
-        {{attraction.desc}}
-      </p>
-    </ion-card-content>
-  </ion-card> -->
-
-
-
-
+  <div class="footer">
+    <ion-grid class="ion_grid">
+      <ion-row class="ion_row">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" class="button_edit, col_home">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_search">
+          <button (click)="btnSearch()" class="col_search, button_edit">
+            <img class="img_search" alt="Search" src="assets/imgs/search.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_fav">
+          <button (click)="btnFavourites()" class="col_fav, button_edit">
+            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_seen">
+          <button (click)="btnSeen()" class="col_seen, button_edit">
+            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

@@ -4,6 +4,9 @@ import { applySourceSpanToStatementIfNeeded } from '@angular/compiler/src/output
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { FavouritesPage } from '../favourites/favourites';
+import { HomePage } from '../home/home';
+import { VisitedPage } from '../visited/visited';
+import { SearchPage } from '../search/search';
 import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 import { SettingsPage } from '../settings/settings';
 
@@ -86,4 +89,19 @@ export class Top10Page {
     this.navCtrl.push(SettingsPage);
   }
 
+  btnHome(){
+    this.navCtrl.push(HomePage);
+  }
+  
+  btnSearch(){
+    this.navCtrl.push(SearchPage);
+  }
+
+  btnFavourites(){
+    this.navCtrl.push(FavouritesPage);
+  }
+
+  btnSeen(){
+    this.navCtrl.push(VisitedPage);
+  }
 }
