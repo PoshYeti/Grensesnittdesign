@@ -1,6 +1,7 @@
-.ion_grid{background-color: white; height: 100%}
-
-.ion_row{height: 50px;}
+page-home{
+    .col_home{background-color: grayscale($color: #FF6F75)}
+    .img_home{background-color: grayscale($color: #FF6F75)}
+}
 
 .logo{position: relative; height: 40px; top: 5px;}
 
@@ -43,21 +44,6 @@
     top: 20px;
 }
 
-.button-col-size{
-    position: relative; 
-    width: 100%; 
-    margin: auto; 
-    padding-left: 15px;
-}
-
-.button-col-size-big{
-    position: relative; 
-    width: 100%; 
-    margin: auto; 
-    left: 30px;
-}
-
-
 .btn-img{top: 0px;}
 
 .btn-imgBig{top: 10px;}
@@ -75,25 +61,3 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 95%;
 }
-
-.footer{
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    border-top-style: solid;
-    border-top-color: black;
-    border-top-width: 1px;
-}
-
-.img_home, .img_search, .img_fav, .img_seen{
-    height: 40px;
-    position: relative;
-    justify-content: center;
-}
-
-.img_search, .img_fav, .img_seen{top: 4px;}
-
-.col_home{background-color: grayscale($color: #FF6F75)}
-
-.img_home{background-color: grayscale($color: #FF6F75)}
