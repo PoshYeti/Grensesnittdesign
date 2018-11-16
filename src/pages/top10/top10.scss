@@ -1,5 +1,11 @@
 page-top10 {
 
+    .col_home{background-color: white}
+    .img_home{background-color: white}
+
+    .spacing{
+        height: 40px;
+    }
   
     .fixed-content{
         background-color: rgb(220, 220, 220);
@@ -13,10 +19,6 @@ page-top10 {
         box-shadow: 0 2px 2px 0px rgba($color: gray, $alpha: 0.7);
         
     }
-    /* .toolbar-background{
-        background-color: map-get($colors, primary);
-        border: none;
-    } */
 
     #navbar{
         background-color: white;
@@ -74,13 +76,6 @@ ion-title{
     z-index: 100;
    
 
-}
-
-
-
-#toolbar-filter{
-    
-    
 }
 
 .icon-usd{

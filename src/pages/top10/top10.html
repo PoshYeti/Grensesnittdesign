@@ -37,9 +37,7 @@
 
 
 <ion-content>
-
   <ion-card padding *ngFor="let attraction of attractionsByCat">
-
     <div id="img-container">
       <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)">
       <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
@@ -83,33 +81,33 @@
           <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
         </ion-col>
       </ion-row>
+      <ion-row class="spacing"></ion-row>
     </ion-grid>
   </ion-card>
-
-  <div class="footer">
-    <ion-grid class="ion_grid">
-      <ion-row class="ion_row">
-        <ion-col col-3 class="col_home">
-          <button (click)="btnHome()" class="button_edit, col_home">
-            <img class="img_home" alt="Search" src="assets/imgs/home.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_search">
-          <button (click)="btnSearch()" class="col_search, button_edit">
-            <img class="img_search" alt="Search" src="assets/imgs/search.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_fav">
-          <button (click)="btnFavourites()" class="col_fav, button_edit">
-            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_seen">
-          <button (click)="btnSeen()" class="col_seen, button_edit">
-            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
 </ion-content>
+<div class="footer">
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3 class="col_home">
+        <button (click)="btnHome()" class="col_home, button_edit">
+          <img class="img_home" alt="Search" src="assets/imgs/home.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_search">
+        <button (click)="btnSearch()" class="col_search, button_edit">
+          <img class="img_search" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_fav">
+        <button (click)="btnFavourites()" class="col_fav, button_edit">
+          <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_seen">
+        <button (click)="btnSeen()" class="col_seen, button_edit">
+          <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
