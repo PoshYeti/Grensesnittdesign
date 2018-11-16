@@ -14,3 +14,43 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.ion_grid{background-color: white; height: 100%}
+
+.ion_row{height: 50px;}
+
+.button_edit{background-color: white;}
+
+.button-col-size{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    padding-left: 15px;
+}
+
+.button-col-size-big{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    left: 30px;
+}
+
+.footer{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+
+    -webkit-transform: translateZ(0);
+}
+
+.img_home, .img_search, .img_fav, .img_seen{
+    height: 40px;
+    position: relative;
+    justify-content: center;
+}
+
+.img_search, .img_fav, .img_seen{top: 4px;}

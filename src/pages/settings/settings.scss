@@ -42,7 +42,7 @@ position: relative;
     text-align: center;
     font-size: 18px;
     margin-top: 30px;
-    text-shadow: 1px 1px #ff0000;
+    text-shadow: 1px 1px lightgray;
 }
 .mail {
     color: black;
@@ -50,35 +50,33 @@ position: relative;
     font-style: italic;
     font-size: 18px;
     margin-bottom: 100px;
-    text-shadow: 1px 1px #ff0000;
+    text-shadow: 1px 1px lightgray;
 }
 .slider {
     background-color: white;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px #ff0000;
+    box-shadow: 1px 1px lightgray;
 }
 .imgs {
     margin-bottom: 0px;
 }
 .question {
     margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     font-weight: bold;
 }
 .answer {
     text-align: center; 
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .icon {
     width:20px;
     height:20px;
-}
-
-.img_home_settings{
-    height: 40px;
-    position: relative;
-    justify-content: center;
 }
 
 

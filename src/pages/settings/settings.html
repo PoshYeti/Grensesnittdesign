@@ -1,4 +1,3 @@
-
 <ion-header>
   <ion-navbar>  
     <ion-title> 
@@ -8,74 +7,66 @@
   </ion-navbar>  
 </ion-header>
 
-
-
 <ion-content class="content" align="center">
-<p class=contrast>
-  <ion-list>
-  <ion-item>
-    <ion-label> {{ 'HIGH CONTRAST' | translate }} </ion-label> 
-    <ion-toggle [(ngModel)]="toggleValue" class=contrast> <div class="toggle-text">{{customText ? "YES" : "NO"}}</div></ion-toggle>
-    
-  </ion-item>
-</ion-list>
-</p>
+  <p class=contrast>
+    <ion-list>
+    <ion-item>
+      <ion-label> {{ 'HIGH CONTRAST' | translate }} </ion-label> 
+      <ion-toggle [(ngModel)]="toggleValue" class=contrast> <div class="toggle-text">{{customText ? "YES" : "NO"}}</div></ion-toggle>
+    </ion-item>
+    </ion-list>
+  </p>
 
-<p class=Language>
-<ion-list>
-  <ion-item>
-    <ion-label>{{ 'LANGUAGE:' | translate }}</ion-label>
-    <ion-select class="options"  [(ngModel)]="lang" (ionChange)="switchLanguage()" >
-      <ion-option value="en" >English</ion-option>
-      <ion-option value="chi">Chineese</ion-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
-</p>
+  <p class=Language>
+    <ion-list>
+      <ion-item>
+        <ion-label>{{ 'LANGUAGE:' | translate }}</ion-label>
+        <ion-select class="options"  [(ngModel)]="lang" (ionChange)="switchLanguage()" >
+          <ion-option value="en" >English</ion-option>
+          <ion-option value="chi">Chineese</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </p>
 
-<p class=headline> {{ 'FAQ:' | translate }}</p>
+  <p class=headline> {{ 'FAQ:' | translate }}</p>
 
-<div class=slider>
+  <div class=slider>
+    <br>
+    <p class=question> {{ 'HOW CAN I SAVE AN ATTRACTION?' | translate }} </p>
+    <p class = answer> {{ 'You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorites-page, that shows the attractions you have favorited, using the navigations bar at the bottom' | translate }} </p>
+    <br>
+    <p class=question> {{ 'CAN I MARK THE PLACES I HAVE ALREADY BEEN TO?' | translate }}  </p>
+    <p class = answer> {{ 'Yes. Just press the check-box in the upper left corner of the attraction photo. Navigate to the visited-page, that shows all the attractions you have already seen, using the navigations bar at the bottom' | translate }}</p>
+    <br>
+    <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
+    <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
+    <br>
+  </div>
 
-  
-   <br>
-   <br>
-  <p class=question> {{ 'HOW CAN I SAVE AN ATTRACTION?' | translate }} </p>
-  <p class = answer> {{ 'You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorites-page, that shows the attractions you have favorited, using the navigations bar at the bottom' | translate }} </p>
-  <br>
-  <p class=question> {{ 'CAN I MARK THE PLACES I HAVE ALREADY BEEN TO?' | translate }}  </p>
-  <p class = answer> {{ 'Yes. Just press the check-box in the upper left corner of the attraction photo. Navigate to the visited-page, that shows all the attractions you have already seen, using the navigations bar at the bottom' | translate }}</p>
-  <br>
-  <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
-  <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
-  <br>
- 
+  <p class=info>{{ 'FOR MORE HELP, PLEASE CONTACT' | translate}}</p>
+  <p class=mail>support@support.com</p>
 
-</div>
-
-<p class=info>{{ 'FOR MORE HELP, PLEASE CONTACT' | translate}}</p>
-<p class=mail>support@support.com</p>
-
- <div class="footer">
+  <div class="footer">
     <ion-grid class="ion_grid">
       <ion-row class="ion_row">
-        <ion-col col-3 class="col_home_settings">
-          <button (click)="btnHome()" clean  class="col_home_settings">
-            <img class="img_home_settings" alt="Search" src="assets/imgs/home.png">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" class="col_home, button_edit">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_search">
-          <button (click)="btnSearch()" clean class="col_search">
+          <button (click)="btnSearch()" class="col_search, button_edit">
             <img class="img_search" alt="Search" src="assets/imgs/search.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_fav">
-          <button (click)="btnFavourites()" clean class="col_fav">
+          <button (click)="btnFavourites()" class="col_fav, button_edit">
             <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_seen">
-          <button (click)="btnSeen()" clean class="col_seen">
+          <button (click)="btnSeen()" class="col_seen, button_edit">
             <img class="img_seen" alt="settings" src="assets/imgs/check.png">
           </button>
         </ion-col>
