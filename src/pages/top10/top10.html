@@ -19,7 +19,7 @@
 
   </ion-navbar>
 
-  <ion-toolbar>
+  <ion-toolbar color="toolbarColor">
     <ion-segment id="toolbar-filter">
       <ion-segment-button value="Rating" (click)="sortByStarsClick()">
         <ion-icon class="icon-filter" name="star"></ion-icon>
@@ -51,8 +51,7 @@
         <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
       </button>
       <div id="trophy-container" *ngIf="isTop10(attraction)">
-        <ion-icon id="trophy-icon" name="trophy"></ion-icon>
-        <div id="trophy-text">10</div>
+        <img id="top10-icon" alt="Top 10" src="assets/imgs/star.png">
       </div>
     </div>
 

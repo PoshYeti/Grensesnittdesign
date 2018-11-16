@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-navbar>  
+    <ion-title> 
+      <img class="icon" alt="setting" src="assets/imgs/preplanned.png">  
+      {{ 'PREPLANNED ROUTES' | translate }} 
+      <button (click)="btnSettings()" clean>
+        <img class="img-settings" alt="settings" src="assets/imgs/settings.png">
+      </button>
+    </ion-title>
+  </ion-navbar>  
+</ion-header>
+
+<ion-content>
+
+<div class="tool">
+ <ion-toolbar >
+    <ion-buttons start>    
+    </ion-buttons>
+   <ion-segment color="dark"> 
+     
+      <ion-segment-button  class=fam value="family">
+        Family
+      </ion-segment-button>
+      <ion-segment-button value="romantic">
+        Romantic
+      </ion-segment-button>
+      <ion-segment-button value="nature">
+        Nature
+      </ion-segment-button>
+        
+      <ion-segment-button value="urban">
+        Urban
+      </ion-segment-button> 
+    </ion-segment>
+    <ion-buttons end>   
+    </ion-buttons>
+  </ion-toolbar>
+</div>
+
+<br>
+<br>
+<br>
+ <div class="cards">
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      <p style="font-size: 12px;">{{ 'FAMOUS ROUTE' | translate }} </p>  
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+
+
+ 
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <div class="footer">
+    <ion-grid class="ion_grid">
+      <ion-row class="ion_row">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" class="col_home, button_edit">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_search">
+          <button (click)="btnSearch()" class="col_search, button_edit">
+            <img class="img_search" alt="Search" src="assets/imgs/search.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_fav">
+          <button (click)="btnFavourites()" class="col_fav, button_edit">
+            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_seen">
+          <button (click)="btnSeen()" class="col_seen, button_edit">
+            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

@@ -13,12 +13,10 @@ page-top10 {
         box-shadow: 0 2px 2px 0px rgba($color: gray, $alpha: 0.7);
         
     }
-    .toolbar-background{
+    /* .toolbar-background{
         background-color: map-get($colors, primary);
         border: none;
-    }
-
-    
+    } */
 
     #navbar{
         background-color: white;
@@ -35,12 +33,10 @@ page-top10 {
 
 }
 
-
 .icon-star{
     color: rgb(238, 215, 88);
     
 }
-
 
 
 ion-title{
@@ -118,25 +114,13 @@ ion-row{
     position: absolute;
     left: 5%;
     bottom: 5%;
-    
 }
 
-#trophy-icon{
+#top10-icon{
     font-size: 35px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: rgba(238, 215, 88, 0.671);
     position: relative;
     z-index: 10;
 }
-
-#trophy-text{
-    left: 8px;
-    top: 8px;
-    font-size: 12px;
-    position: absolute;
-    z-index: 11;
-}
-
 
 .btn-sort{
     border-bottom: 5px solid hidden yellow;
