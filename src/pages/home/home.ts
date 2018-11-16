@@ -20,9 +20,21 @@ export class HomePage {
   btnSettings(){
     this.navCtrl.push(SettingsPage);
   }
+
+  btnHome(){
+    this.navCtrl.push(HomePage);
+  }
   
   btnSearch(){
     this.navCtrl.push(SearchPage);
+  }
+
+  btnFavourites(){
+    this.navCtrl.push(FavouritesPage);
+  }
+
+  btnSeen(){
+    this.navCtrl.push(VisitedPage);
   }
 
 

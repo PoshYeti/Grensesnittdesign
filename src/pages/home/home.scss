@@ -35,6 +35,21 @@
     top: 20px;
 }
 
+.button-col-size{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    padding-left: 15px;
+}
+
+.button-col-size-big{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    left: 30px;
+}
+
+
 .btn-img{top: 0px;}
 
 .btn-imgBig{top: 10px;}
@@ -50,6 +65,7 @@
     z-index: 20;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 95%;
 }
 
 .footer{
