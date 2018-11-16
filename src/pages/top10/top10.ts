@@ -25,11 +25,17 @@ export class Top10Page {
   attractionsByCat: Card[];
   pageType: string;
   pageIcon: string;
+  toolbarColor: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pageType = navParams.get('type');
     this.pageIcon = navParams.get('icon');
-    console.log(this.pageIcon);
+    if(this.pageType == 'Top 10'){
+      this.toolbarColor = '#fceda4'; //yellow-ish
+    } else {
+      this.toolbarColor = '#FF6F75'; //red-ish
+    }
+   
   }
 
   ngOnInit(): void {
@@ -37,7 +43,12 @@ export class Top10Page {
     this.attractionsByCat = this.attractions.filter(obj => {
       return obj.tags.includes(this.pageType);
     });
+    var toolbar = document.getElementsByClassName("toolbar-background");
+    for (var i = 0; i < toolbar.length; i++) {
+      toolbar[i].style.backgroundColor = this.toolbarColor;
+    }
   }
+
 
   openAttractionDetails(attraction: Card) {
     this.navCtrl.push(AttractionDetailPage, { attraction });
