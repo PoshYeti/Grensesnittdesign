@@ -46,8 +46,9 @@ export class Top10Page {
     this.attractionsByCat = this.attractions.filter(obj => {
       return obj.tags.includes(this.pageType);
     });
-    var toolbar = document.getElementsByClassName("toolbar-background");
-    for (var i = 0; i < toolbar.length; i++) {
+    var toolbar, i;
+    toolbar = document.getElementsByClassName("toolbar-background");
+    for (i = 0; i < toolbar.length; i++) {
       toolbar[i].style.backgroundColor = this.toolbarColor;
     }
   }
