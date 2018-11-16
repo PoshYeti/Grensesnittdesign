@@ -1,11 +1,20 @@
 <ion-header>
   <ion-navbar>  
     <ion-title> 
-      <img class="icon" alt="setting" src="assets/imgs/preplanned.png">  
-      {{ 'PREPLANNED ROUTES' | translate }} 
-      <button (click)="btnSettings()" clean>
-        <img class="img-settings" alt="settings" src="assets/imgs/settings.png">
-      </button>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1></ion-col>
+          <ion-col col-9 class="pre_col">
+            <img class="icon" alt="setting" src="assets/imgs/preplanned.png">  
+            {{ 'PREPLANNED ROUTES' | translate }} 
+          </ion-col>
+          <ion-col col-2>
+            <button class="button_edit" (click)="btnSettings()">
+              <img class="img_header" alt="settings" src="assets/imgs/settings.png">
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-title>
   </ion-navbar>  
 </ion-header>
