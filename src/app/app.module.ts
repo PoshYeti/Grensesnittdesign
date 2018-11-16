@@ -9,6 +9,8 @@ import { Top10Page } from '../pages/top10/top10';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
+import { FavouritesPage } from '../pages/favourites/favourites';
+import { VisitedPage } from '../pages/visited/visited';
 
 import { HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -27,8 +29,9 @@ export function createTranslateLoader(http: HttpClient) {
     Top10Page,
     SettingsPage,
     SearchPage,
-    AttractionDetailPage
-
+    AttractionDetailPage,
+    FavouritesPage,
+    VisitedPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,9 @@ export function createTranslateLoader(http: HttpClient) {
     Top10Page,
     SettingsPage,
     SearchPage,
-    AttractionDetailPage
+    AttractionDetailPage,
+    FavouritesPage,
+    VisitedPage
   ],
   providers: [
     StatusBar,

@@ -23,6 +23,14 @@
     top: 10px;
 }
 
+.btn-museum, .btn-restaurant, .btn-shopping, 
+.btn-park, .btn-landmark, .btn-hop, .btn-star, .btn-route{
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    box-shadow: 3px 3px lightgray;
+}
+
 .btn-star{border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
 
 .btn-route{border-top-right-radius: 15px; border-bottom-right-radius: 15px;}
@@ -34,6 +42,21 @@
     width: 40%;
     top: 20px;
 }
+
+.button-col-size{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    padding-left: 15px;
+}
+
+.button-col-size-big{
+    position: relative; 
+    width: 100%; 
+    margin: auto; 
+    left: 30px;
+}
+
 
 .btn-img{top: 0px;}
 
@@ -50,6 +73,7 @@
     z-index: 20;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 95%;
 }
 
 .footer{

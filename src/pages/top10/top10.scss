@@ -1,17 +1,24 @@
 page-top10 {
+
+  
+    .fixed-content{
+        background-color: rgb(220, 220, 220);
+    }
     .toolbar-md{
         min-height: 40px;
-        height: 40px;
+        height: 50px;
         width: 100%;
         padding: 0;
         margin: 0;
+        box-shadow: 0 2px 2px 0px rgba($color: gray, $alpha: 0.7);
         
     }
     .toolbar-background{
-        background-color: map-get($colors, primary)
-       
-        
+        background-color: map-get($colors, primary);
+        border: none;
     }
+
+    
 
     #navbar{
         background-color: white;
@@ -19,7 +26,11 @@ page-top10 {
     }
 
     .icon-filter{
-        color: white;
+        color: black;
+    }
+
+    .card-md{
+        margin-top: 0;
     }
 
 }
@@ -99,7 +110,6 @@ ion-row{
 
 #img-container{
     position: relative;
-    border: 3px solid black;
 }
 
 #trophy-container{
@@ -130,10 +140,6 @@ ion-row{
 
 .btn-sort{
     border-bottom: 5px solid hidden yellow;
-}
-
-.checkbox{
-    background-color: red !important;
 }
 
 .btn-fab-favourite{
