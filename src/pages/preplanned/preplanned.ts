@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-favourites',
+  selector: 'page-preplanned',
   templateUrl: 'preplanned.html'
 })
 export class PreplannedPage {

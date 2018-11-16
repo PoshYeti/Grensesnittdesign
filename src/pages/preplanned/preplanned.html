@@ -10,57 +10,122 @@
   </ion-navbar>  
 </ion-header>
 
-
 <ion-content>
 
- <ion-toolbar>
-    <ion-buttons start>
-      <button ion-button icon-only>
-        <ion-icon name="create"></ion-icon>
-      </button>
+<div class="tool">
+ <ion-toolbar >
+    <ion-buttons start>    
     </ion-buttons>
-    <ion-segment>
-      <ion-segment-button value="new">
-        New
+   <ion-segment color="dark"> 
+     
+      <ion-segment-button  class=fam value="family">
+        Family
       </ion-segment-button>
-      <ion-segment-button value="hot">
-        Hot
+      <ion-segment-button value="romantic">
+        Romantic
       </ion-segment-button>
+      <ion-segment-button value="nature">
+        Nature
+      </ion-segment-button>
+        
+      <ion-segment-button value="urban">
+        Urban
+      </ion-segment-button> 
     </ion-segment>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="more"></ion-icon>
-      </button>
+    <ion-buttons end>   
     </ion-buttons>
   </ion-toolbar>
+</div>
+
+<br>
+<br>
+<br>
+ <div class="cards">
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      <p style="font-size: 12px;">{{ 'FAMOUS ROUTE' | translate }} </p>  
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
 
 
-  <div class="footer">
+ 
+  <ion-card padding="10px;">
+  <img src="assets/imgs/familie.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{ 'FAMOUS ROUTE' | translate }}   
+      </ion-card-title>
+      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+    <p>  
+    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    </p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+<br>
+<br>
+<br>
+
+
+   <div class="footer">
     <ion-grid class="ion_grid">
       <ion-row class="ion_row">
-        <ion-col col-3 class="col_home_settings">
-          <button (click)="btnHome()" clean  class="col_home_settings">
-            <img class="img_home_settings" alt="Search" src="assets/imgs/home.png">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" class="col_home, button_edit">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_search">
-          <button (click)="btnSearch()" clean class="col_search">
+          <button (click)="btnSearch()" class="col_search, button_edit">
             <img class="img_search" alt="Search" src="assets/imgs/search.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_fav">
-          <button (click)="btnFavourites()" clean class="col_fav">
+          <button (click)="btnFavourites()" class="col_fav, button_edit">
             <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
           </button>
         </ion-col>
         <ion-col col-3 class="col_seen">
-          <button (click)="btnSeen()" clean class="col_seen">
+          <button (click)="btnSeen()" class="col_seen, button_edit">
             <img class="img_seen" alt="settings" src="assets/imgs/check.png">
           </button>
         </ion-col>
       </ion-row>
     </ion-grid>
   </div>
-
 
 </ion-content>
