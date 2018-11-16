@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { attractions } from '../../assets/data/attractions';
+import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 
