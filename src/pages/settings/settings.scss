@@ -52,15 +52,23 @@ position: relative;
     margin-bottom: 100px;
     text-shadow: 1px 1px #ff0000;
 }
-.slides {
-    height: 250px;
+.slider {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px #ff0000;
 }
 .imgs {
     margin-bottom: 0px;
-
 }
 .question {
     margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.answer {
+    text-align: center; 
 }
 .icon {
     width:20px;
