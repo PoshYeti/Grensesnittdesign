@@ -11,10 +11,12 @@ import { SearchPage } from '../pages/search/search';
 import { AttractionDetailPage } from '../pages/attraction-detail/attraction-detail';
 import { FavouritesPage } from '../pages/favourites/favourites';
 import { VisitedPage } from '../pages/visited/visited';
+import { PreplannedPage } from '../pages/preplanned/preplanned';
 
 import { HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader (http, './assets/i18n/', '.json');
@@ -31,7 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
     SearchPage,
     AttractionDetailPage,
     FavouritesPage,
-    VisitedPage
+    VisitedPage,
+    PreplannedPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ export function createTranslateLoader(http: HttpClient) {
     SearchPage,
     AttractionDetailPage,
     FavouritesPage,
-    VisitedPage
+    VisitedPage,
+    PreplannedPage
   ],
   providers: [
     StatusBar,

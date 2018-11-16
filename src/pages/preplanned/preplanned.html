@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>  
+    <ion-title> 
+      <img class="icon" alt="setting" src="assets/imgs/preplanned.png">  
+      {{ 'PREPLANNED ROUTES' | translate }} 
+      <button (click)="btnSettings()" clean>
+        <img class="img-settings" alt="settings" src="assets/imgs/settings.png">
+      </button>
+    </ion-title>
+  </ion-navbar>  
+</ion-header>
+
+
+<ion-content>
+
+ <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-segment>
+      <ion-segment-button value="new">
+        New
+      </ion-segment-button>
+      <ion-segment-button value="hot">
+        Hot
+      </ion-segment-button>
+    </ion-segment>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <div class="footer">
+    <ion-grid class="ion_grid">
+      <ion-row class="ion_row">
+        <ion-col col-3 class="col_home_settings">
+          <button (click)="btnHome()" clean  class="col_home_settings">
+            <img class="img_home_settings" alt="Search" src="assets/imgs/home.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_search">
+          <button (click)="btnSearch()" clean class="col_search">
+            <img class="img_search" alt="Search" src="assets/imgs/search.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_fav">
+          <button (click)="btnFavourites()" clean class="col_fav">
+            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_seen">
+          <button (click)="btnSeen()" clean class="col_seen">
+            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

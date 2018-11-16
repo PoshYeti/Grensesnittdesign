@@ -5,6 +5,7 @@ import { SettingsPage } from '../settings/settings';
 import { FavouritesPage } from '../favourites/favourites';
 import { SearchPage } from '../search/search';
 import { VisitedPage } from '../visited/visited';
+import { PreplannedPage } from '../preplanned/preplanned';
 
 
 @Component({
@@ -35,6 +36,10 @@ export class HomePage {
 
   btnSeen(){
     this.navCtrl.push(VisitedPage);
+  }
+
+  btnPlanned(){
+    this.navCtrl.push(PreplannedPage);
   }
 
 

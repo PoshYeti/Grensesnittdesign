@@ -13,6 +13,7 @@
     "LANGUAGE:" : "語言", 
     "FOR MORE HELP, PLEASE CONTACT" : "如需更多幫助，請聯繫", 
     "FAVOIRITES" : "嬖",
+    "FAVOURITES" : "嬖",
     "FAQ:" : "經常問的問題",
     "You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorites-page, that shows the attractions you have favorited, using the navigations bar at the bottom" 
     : "您可以通過按吸引力照片右上角的心臟來收藏一個景點。 使用底部的導航欄導航到最喜歡的頁面，該頁面顯示您最喜歡的景點",
@@ -21,8 +22,9 @@
     "HOW CAN I SAVE AN ATTRACTION?": "我如何保存吸引力?",
     "CAN I MARK THE PLACES I'VE ALREADY BEEN TO?" : "我可以標記我已經到過的地方嗎？",
     "Yes. Just press the check-box in the upper left corner of the attraction photo. Navigate to the visited-page, that shows all the attractions you have already seen, using the navigations bar at the bottom" 
-    : "是。 只需按下景點照片左上角的複選框即可。 使用底部的導航欄導航到訪問頁面，該頁面顯示您已經看過的所有景點"
-
+    : "是。 只需按下景點照片左上角的複選框即可。 使用底部的導航欄導航到訪問頁面，該頁面顯示您已經看過的所有景點",
+    "PLACES VISITED" : "訪問地點"
+    
 
 
 
