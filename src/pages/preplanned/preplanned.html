@@ -18,18 +18,18 @@
     </ion-buttons>
    <ion-segment color="dark"> 
      
-      <ion-segment-button  class=fam value="family">
-        Family
+      <ion-segment-button  class=fam value="family" (click)="sortByFamily()">
+        {{ 'FAMILY' | translate }}
       </ion-segment-button>
       <ion-segment-button value="romantic">
-        Romantic
+        {{ 'Romantic' | translate }}
       </ion-segment-button>
       <ion-segment-button value="nature">
-        Nature
+        {{ 'Nature' | translate }}
       </ion-segment-button>
         
       <ion-segment-button value="urban">
-        Urban
+        {{ 'Urban' | translate }}
       </ion-segment-button> 
     </ion-segment>
     <ion-buttons end>   
@@ -42,7 +42,7 @@
 <br>
  <div class="cards">
   <ion-card padding="10px;">
-  <img src="assets/imgs/familie.png"/>
+  <img src="assets/imgs/familie.png" (click)="openRoutes()"><img/>
   <ion-card-content>
     <ion-card-title>
       {{ 'FAMOUS ROUTE' | translate }}   
@@ -127,5 +127,4 @@
       </ion-row>
     </ion-grid>
   </div>
-
 </ion-content>
