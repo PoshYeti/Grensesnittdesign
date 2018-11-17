@@ -21,6 +21,10 @@ import { SettingsPage } from '../settings/settings';
 })
 export class AttractionDetailPage {
   attraction: Card;
+  comments: Array<string> = new Array();
+  commentString: string;
+  exampleUser: string = "Ola Nordmann:  ";
+  length: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.attraction = navParams.get('attraction');
@@ -29,6 +33,19 @@ export class AttractionDetailPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AttractionDetailPage');
  
+  }
+
+  onCommentChange(ev: any) {
+     const val = ev.target.value;
+     this.commentString = val;
+  }
+
+  commentEnterKey(){
+    length = this.comments.push(this.commentString)
+    this.commentString = "";
+    for(let i in this.comments){
+      console.log(this.comments[i]);
+    }
   }
 
   btnHome(){
