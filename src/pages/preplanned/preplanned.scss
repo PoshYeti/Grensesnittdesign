@@ -1,3 +1,12 @@
+.col_home{background-color: white}
+.img_home{background-color: white}
+
+.pre_col{top: 15px;}
+
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .icon {
     width:20px;
     height:20px;
@@ -8,4 +17,22 @@
     right: 5%;
     height: 35px;
     margin-bottom: 10px;
+    background-color: white;
 }
+.cards {
+    padding: 10px;
+}
+.icon-usd{
+    color: green;
+    
+}
+.route {
+    font-size: 15px;
+}
+.tool {
+    position: fixed;
+    width: 100%; 
+    
+}
+
+

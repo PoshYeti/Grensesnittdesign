@@ -17,18 +17,19 @@
   <div id="img-container">
     <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-    <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
-      <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
-      <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
-    </button>
-    <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
-      <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-      <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-    </button>
-    <div id="trophy-container" *ngIf="isTop10(attraction)">
-      <img id="top10-icon" alt="Top 10" src="assets/imgs/star.png">
-    </div>
-  </div>
+  <ion-scroll scrollY="true" style="white-space:nowrap; height: 900px;">
+
+  <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
+
+  <button ion-fab class="btn-fab-check">
+    <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
+  </button>
+  <button ion-fab class="btn-fab-favourite">
+    <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+    <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+    
+  </button>
+
   <div id="attraction-image-text-container">
     <ion-grid>
       <ion-row class="img-bottom-row" align-items-center>
@@ -58,9 +59,8 @@
 
 
   <ion-item text-wrap id="attraction-text-container">
-    <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
-    <h2 id="attraction-name-text">{{attraction.name}}</h2>
-    <p>{{attraction.desc}}</p>
+    <h2 class="attraction-name-text">{{attraction.name}}</h2>
+    <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
   </ion-item>
 
   <ion-item text-wrap id="bottom-text-container">
@@ -84,4 +84,38 @@
     </ion-grid>
   </ion-item>
 
+  <ion-item class="comment-field">
+    <ion-label>TEST 1</ion-label>
+  </ion-item>
+  <ion-item class="comment-field">
+      <ion-label>TEST 2</ion-label>
+    </ion-item>
+
+</ion-scroll>
 </ion-content>
+<div class="footer">
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3 class="col_home">
+        <button (click)="btnHome()" class="col_home, button_edit">
+          <img class="img_home" alt="Search" src="assets/imgs/home.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_search">
+        <button (click)="btnSearch()" class="col_search, button_edit">
+          <img class="img_search" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_fav">
+        <button (click)="btnFavourites()" class="col_fav, button_edit">
+          <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_seen">
+        <button (click)="btnSeen()" class="col_seen, button_edit">
+          <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

@@ -12,6 +12,7 @@ import { AttractionDetailPage } from '../pages/attraction-detail/attraction-deta
 import { FavouritesPage } from '../pages/favourites/favourites';
 import { VisitedPage } from '../pages/visited/visited';
 import { PreplannedPage } from '../pages/preplanned/preplanned';
+import { RoutesPage } from '../pages/routes-detail/routes-detail';
 
 import { HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -34,7 +35,8 @@ export function createTranslateLoader(http: HttpClient) {
     AttractionDetailPage,
     FavouritesPage,
     VisitedPage,
-    PreplannedPage
+    PreplannedPage,
+    RoutesPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,8 @@ export function createTranslateLoader(http: HttpClient) {
     AttractionDetailPage,
     FavouritesPage,
     VisitedPage,
-    PreplannedPage
+    PreplannedPage,
+    RoutesPage
   ],
   providers: [
     StatusBar,

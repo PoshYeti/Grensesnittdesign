@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Card } from '../top10/attractions.interface';
+import { FavouritesPage } from '../favourites/favourites';
+import { HomePage } from '../home/home';
+import { VisitedPage } from '../visited/visited';
+import { SearchPage } from '../search/search';
+import { SettingsPage } from '../settings/settings';
 
 /**
  * Generated class for the AttractionDetailPage page.
@@ -25,6 +30,14 @@ export class AttractionDetailPage {
     console.log('ionViewDidLoad AttractionDetailPage');
  
   }
+
+  btnHome(){
+    this.navCtrl.push(HomePage);
+  }
+  
+  btnSearch(){
+    this.navCtrl.push(SearchPage);
+  }
   isTop10(attraction: Card) {
     return attraction.tags.includes('Top 10');
   }
@@ -44,5 +57,14 @@ export class AttractionDetailPage {
       attraction.seen = true;
     }
   }
+
+  btnFavourites(){
+    this.navCtrl.push(FavouritesPage);
+  }
+
+  btnSeen(){
+    this.navCtrl.push(VisitedPage);
+  }
+  
 
 }

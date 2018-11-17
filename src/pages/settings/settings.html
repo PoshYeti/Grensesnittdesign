@@ -39,40 +39,36 @@
     <p class=question> {{ 'CAN I MARK THE PLACES I HAVE ALREADY BEEN TO?' | translate }}  </p>
     <p class = answer> {{ 'Yes. Just press the check-box in the upper left corner of the attraction photo. Navigate to the visited-page, that shows all the attractions you have already seen, using the navigations bar at the bottom' | translate }}</p>
     <br>
-    <p class=question> * HOW CAN I SAVE AN ATTRACTION? </p>
-    <p class = answer> You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorite page, that shows the attractions you've favorited, using the navigations bar at the bottom</p>
-    <br>
   </div>
 
   <p class=info>{{ 'FOR MORE HELP, PLEASE CONTACT' | translate}}</p>
   <p class=mail>support@support.com</p>
-
-  <div class="footer">
-    <ion-grid class="ion_grid">
-      <ion-row class="ion_row">
-        <ion-col col-3 class="col_home">
-          <button (click)="btnHome()" class="col_home, button_edit">
-            <img class="img_home" alt="Search" src="assets/imgs/home.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_search">
-          <button (click)="btnSearch()" class="col_search, button_edit">
-            <img class="img_search" alt="Search" src="assets/imgs/search.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_fav">
-          <button (click)="btnFavourites()" class="col_fav, button_edit">
-            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_seen">
-          <button (click)="btnSeen()" class="col_seen, button_edit">
-            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
 </ion-content>
+<div class="footer">
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3 class="col_home">
+        <button (click)="btnHome()" class="col_home, button_edit">
+          <img class="img_home" alt="Search" src="assets/imgs/home.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_search">
+        <button (click)="btnSearch()" class="col_search, button_edit">
+          <img class="img_search" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_fav">
+        <button (click)="btnFavourites()" class="col_fav, button_edit">
+          <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_seen">
+        <button (click)="btnSeen()" class="col_seen, button_edit">
+          <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 
 

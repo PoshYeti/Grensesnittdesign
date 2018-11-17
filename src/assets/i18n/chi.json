@@ -1,12 +1,18 @@
 {
-    "MUSEUM" : "博物館",
+    "MUSEUMS" : "博物館",
+    "Museums" : "博物館",
     "SHOPPING" : "購物",
-    "LANDMARK" : "界標",
-    "RESTAURANT" : "餐厅", 
+    "Shopping" : "購物",
+    "LANDMARKS" : "界標",
+    "Landmarks" : "界標",
+    "RESTAURANTS" : "餐厅",
+    "Restaurants" : "餐厅",
     "PARKS" : "公园",
+    "Parks" : "公园",
     "HOP ON/OFF"  : "總線",
-    "Hop on/off" : "總線",
+    "Hop On/Off" : "總線",
     "TOP 10" : "前十名", 
+    "Top 10" : "前十名",
     "PREPLANNED ROUTES" : "預先準備好的路線",
     "SETTINGS" : "設置",
     "HIGH CONTRAST" : "高對比度",
@@ -15,6 +21,8 @@
     "FAVOIRITES" : "嬖",
     "FAVOURITES" : "嬖",
     "FAQ:" : "經常問的問題",
+
+    
     "You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorites-page, that shows the attractions you have favorited, using the navigations bar at the bottom" 
     : "您可以通過按吸引力照片右上角的心臟來收藏一個景點。 使用底部的導航欄導航到最喜歡的頁面，該頁面顯示您最喜歡的景點",
     "SEARCH" : "搜索",
@@ -23,8 +31,49 @@
     "CAN I MARK THE PLACES I'VE ALREADY BEEN TO?" : "我可以標記我已經到過的地方嗎？",
     "Yes. Just press the check-box in the upper left corner of the attraction photo. Navigate to the visited-page, that shows all the attractions you have already seen, using the navigations bar at the bottom" 
     : "是。 只需按下景點照片左上角的複選框即可。 使用底部的導航欄導航到訪問頁面，該頁面顯示您已經看過的所有景點",
-    "PLACES VISITED" : "訪問地點"
-    
+    "PLACES VISITED" : "訪問地點",
+    "FAMOUS ROUTE" : "著名的路線",
+    "See some of the most famous landmarks in Oslo." : "參觀奧斯陸一些最著名的地標。",
+    "FAMILY" : "家庭",
+    "ROMANTIC" : "浪漫",
+    "NATURE" : "性質",
+    "URBAN" : "城市的",
+    "The ski museum in Holmenkollen, located underneath the famous ski jump, is the oldest of its kind in the world. The museum presents more than 4,000 years of skiing history, Norwegian polar exploration artifacts and an exhibition on snowboarding and modern skiing." 
+    : "Holmenkollen的滑雪博物館位於著名的滑雪跳台下，是世界上最古老的滑雪博物館。 該博物館展示了4000多年的滑雪歷史，挪威極地探險文物以及滑雪板和現代滑雪展覽。",
+    "Edvard Munch has a unique position among Nordic painters and is considered a pioneer in expressionism. The Munch Museum's collection, left to the city of Oslo by the artist, consists of paintings, graphical prints and drawings. By constantly changing the exhibitions, the museum presents the variety in his production." 
+    : "愛德華·蒙克在北歐畫家中佔有獨特的地位，被認為是表現主義的先驅。 蒙克博物館的藏品由藝術家留在奧斯陸市，由繪畫，圖形印刷和繪畫組成。 通過不斷改變展覽，博物館展示了他的作品的多樣性。",
+    "Museum on the Bygdøy peninsula with the world's best-preserved Viking ships and finds from Viking tombs around the Oslo Fjord. Two museums in the same ticket: Use your ticket from the Viking Ship Museum to get free entry to Historical Museum within 48 hours." 
+    : "Bygdøy半島上的博物館擁有世界上保存最完好的海盜船和奧斯陸峽灣周圍的維京墓葬。 同一張票中的兩個博物館：使用維京船博物館的門票，可在48小時內免費進入歷史博物館。",
+    "Sculpture museum located in the studio and home of sculptor Gustav Vigeland (1869-1943). The building is regarded as one of the finest examples of neo-classical architecture in Norway." 
+    : "位於雕刻家古斯塔夫維格蘭（1869-1943）的工作室和家的雕塑博物館。 該建築被認為是挪威新古典主義建築的最佳典範之一。",
+    "Norway's largest public collection of paintings, drawings and sculptures is found in the National Gallery, established in 1837. The gallery's central attractions include Edvard Munch The Scream and Madonna."
+    :"挪威最大的繪畫，繪畫和雕塑公共收藏品於1837年建立的國家美術館內。畫廊的中心景點包括Edvard Munch The Scream和麥當娜。",
+    "Three stores next to City Hall with Norwegian knitwear, gifts and souvenirs. Norway Shop's suppliers are individually selected, securing the high quality that characterises Norwegian products. The knitwear, fur and pewter are all made in Norway, and Norway Shop guarantees for their quality with a money-back guarantee." 
+    : "市政廳旁邊有三家商店，有挪威針織品，禮品和紀念品。 挪威商店的供應商是經過單獨挑選的，確保了挪威產品的高品質。 針織品，毛皮和白蠟都是在挪威製造，挪威商店通過退款保證保證其質量。",
+    "Norway Designs is the place to go for art glass, ceramics, fashions, silver jewellery, finer paper products and stationary, kitchen utensils, textiles, watches or small Scandinavian design products."
+    : "挪威設計是藝術玻璃，陶瓷，時尚，銀首飾，精美紙製品和文具，廚房用具，紡織品，手錶或斯堪的納維亞小型設計產品的理想去處。",
+    "Stylish shopping gallery with more than 30 high-end fashion and lifestyle shops, bars, cafés and restaurants. The atmosphere in Paleet is characterised as calm, intimate and relaxing - very different from what you normally expect from a shopping centre." 
+    : "時尚的購物廊，擁有30多家高端時尚和生活時尚商店，酒吧，咖啡館和餐廳。 Paleet的氛圍具有平靜，親密和放鬆的特點 - 與您通常對購物中心的期望大不相同。",
+    "Oslo Cathedral is the main church for the Church of Norway Diocese of Oslo, and is used for weddings and funerals by the Norwegian Royal Family and the Norwegian Government." : "奧斯陸大教堂是挪威奧斯陸教區的主要教堂，挪威王室和挪威政府用於舉辦婚禮和葬禮",
+    "The place has a unique atmosphere. Here you can find a range of restaurants with top of the art cuisine, small shops, a hotel and Oslo Visitor Center. It is the perfect place to find good Food and beautiful architecture, and all at the heart of Oslo" 
+    : "這個地方有一個獨特的氛圍。 在這裡，您可以找到各種餐廳，提供最先進的美食，小商店，酒店和奧斯陸游客中心。 這裡是尋找美食和美麗建築的理想場所，位於奧斯陸的中心地帶",
+    "The tiger in front of Oslo Central Station is one of Oslo's most photographed 'inhabitants' and one of the first things that meet a visitor arriving at Oslo Central Station. When Oslo celebrated its 1000-year anniversary in 2000, Eiendomsspar wanted to give the city a gift. Oslo wanted a tiger, and that's what they got: a 4.5-metre bronze tiger made by Elena Engelsen." 
+    : "奧斯陸中央火車站前面的老虎是奧斯陸拍攝最多的“居民”之一，也是第一批遇見奧斯陸中央火車站的遊客之一。 當奧斯陸在2000年慶祝其1000週年紀念日時，Eiendomsspar想要給這個城市一個禮物。 奧斯陸想要一隻老虎，這就是他們得到的：一隻由Elena Engelsen製作的4.5米長的青銅虎。“，",
+    "Oslo Opera House features eight arts projects in which 17 different artists were involved. The majority of the artwork is more or less integrated into the building, such as the stage curtain Metafoil by Pae White and the four predominantly white-lit installations in the wardrobe area of the foyer by Olafur Eliasson called The Other Wall." 
+    : "奧斯陸歌劇院有八個藝術項目，其中有17位不同的藝術家參與其中。 大部分藝術品或多或少地融入了建築物，例如Pae White的舞台幕布Metafoil以及Olafur Eliasson稱為The Other Wall的門廳衣櫃區域中的四個主要由白色照明的裝置。",
+    "The Parliament building, seat of the Norwegian National Assembly since 1866." : "議會大樓，自1866年以來一直是挪威國民議會的所在地。",
+    "Mathallen Oslo is a foodie's paradise: an indoor food market with more than 30 specialty shops, cafés and eateries that offer high-quality products and dishes from Norway and abroad. Here you will find items that you can not find elsewhere in the city." : "Mathallen Oslo是美食家的天堂：一個室內食品市場，擁有30多家專賣店，咖啡館和餐館，提供來自挪威和國外的高品質產品和菜餚。 在這裡，您將找到在城市其他地方找不到的物品。",
+    "Restaurant inspired by Southeast Asian street food, where fresh ingredients  become tasty dishes that are served with a smile. The food at Asia Aker Brygge is served as small portions so that everyone around the table can try a little of everything. Keywords are exotic spices, coconut, lime, chili, lemongrass, noodles, curry, wok and pho." 
+    : "餐廳的靈感來自東南亞的街頭美食，新鮮的食材成為美味的菜餚，微笑著。 亞洲Aker Brygge的食物份量很小，因此桌子周圍的每個人都可以嘗試一切。 關鍵詞是異國情調的香料，椰子，酸橙，辣椒，檸檬草，麵條，咖哩，炒鍋和河粉。",
+    "Nordic restaurant with a seasonal tasting menu that changes frequently. Though based on New Nordic cuisine, the kitchen also welcomes inspiration from all corners of the world. The Astral also has a bar-lounge with a simpler à la carte menu and good wines by the glass."
+    : "北歐餐廳提供經常變化的季節性品嚐菜單。 雖然廚房以新北歐美食為基礎，但也歡迎來自世界各地的靈感。 Astral酒店還設有一間酒吧休息室，提供簡單的單點菜單和優質的玻璃杯葡萄酒。",
+    "The park that surrounds the Royal Palace was built during the 1840's. It is characterised by its many majestic trees, well-kept lawns and beautiful ponds. Despite its royal affiliations, the park is a popular recreational area."
+    : "皇宮周圍的公園建於1840年代。 它的特點是雄偉的樹木，保存完好的草坪和美麗的池塘。 儘管擁有皇家附屬品，但該公園仍是一個受歡迎的休閒區。",
+    "Large garden at Tøyen with ample botanical variety and diversity. Most of the area is designed as an Arboretum, with approximately 1800 different plants. The garden holds a large and varied collection of trees and shrubs planted in a systematic fashion after plant family."
+    :"Tøyen的大型花園擁有豐富的植物多樣性和多樣性。 大部分區域設計為植物園，約有1800種不同的植物。 花園裡種植著各種各樣的樹木和灌木，這些樹木和灌木是在植物家族之後以系統的方式種植的。",
+    "The largest park in central parts of Oslo and a popular recreational area for people from all over the city. Inside the park you find Vigeland Sculpture Park, one of Oslo's most popular attractions." : "奧斯陸市中心最大的公園，是一個受歡迎的休閒區，適合來自全城各地的人們。 在公園內您可以找到奧斯陸最受歡迎的景點之一維格蘭雕塑公園。"
+   
+
 
 
 
