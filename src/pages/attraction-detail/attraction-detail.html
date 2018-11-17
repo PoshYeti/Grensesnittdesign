@@ -14,85 +14,86 @@
 
 
 <ion-content id="page-content">
-  <div id="img-container">
-    <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
+
+
 
   <ion-scroll scrollY="true" style="white-space:nowrap; height: 900px;">
+    <div id="img-container">
+      <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-  <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
+      <button ion-fab class="btn-fab-check">
+        <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
+      </button>
+      <button ion-fab class="btn-fab-favourite">
+        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
 
-  <button ion-fab class="btn-fab-check">
-    <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
-  </button>
-  <button ion-fab class="btn-fab-favourite">
-    <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-    <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-    
-  </button>
+      </button>
+    </div>
 
-  <div id="attraction-image-text-container">
-    <ion-grid>
-      <ion-row class="img-bottom-row" align-items-center>
-        <ion-col>
-          <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 2" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 3" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 4" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 2" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 3" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 4" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
-        </ion-col>
-        <ion-col>
-          <p id="distance-text">{{attraction.distance +'m'}}</p>
-        </ion-col>
-        <ion-col>
-          <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 1" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 2" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+    <div id="attraction-image-text-container">
+      <ion-grid>
+        <ion-row class="img-bottom-row" align-items-center>
+          <ion-col>
+            <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars > 2" class="icon-star" name="star" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars > 3" class="icon-star" name="star" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars > 4" class="icon-star" name="star" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars < 2" class="icon-star" name="star-outline" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars < 3" class="icon-star" name="star-outline" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars < 4" class="icon-star" name="star-outline" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
+          </ion-col>
+          <ion-col>
+            <p id="distance-text">{{attraction.distance +'m'}}</p>
+          </ion-col>
+          <ion-col>
+            <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.price > 1" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.price > 2" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+            <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
 
 
-  <ion-item text-wrap id="attraction-text-container">
-    <h2 class="attraction-name-text">{{attraction.name}}</h2>
-    <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
-  </ion-item>
+    <ion-item text-wrap id="attraction-text-container">
+      <h2 class="attraction-name-text">{{attraction.name}}</h2>
+      <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
+    </ion-item>
 
-  <ion-item text-wrap id="bottom-text-container">
-    <ion-grid>
-      <ion-row>
-        <ion-col align-self-center>
-          <div class="bottom-column">
-            <ion-icon id="address-icon" name="navigate" small></ion-icon>
-            <p id="address-text">{{attraction.address}}</p>
-          </div>
-        </ion-col>
-        <ion-col align-self-center>
-          <ion-icon id="time-icon" name="time" small></ion-icon>
-          <p id="time-text">{{attraction.time +'min'}}</p>
-        </ion-col>
-        <ion-col align-self-center>
-          <ion-icon name="planet" small></ion-icon>
-          <a id="webpage-text" href=attraction.webpage>Webpage</a>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-item>
+    <ion-item text-wrap id="bottom-text-container">
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-center>
+            <div class="bottom-column">
+              <ion-icon id="address-icon" name="navigate" small></ion-icon>
+              <p id="address-text">{{attraction.address}}</p>
+            </div>
+          </ion-col>
+          <ion-col align-self-center>
+            <ion-icon id="time-icon" name="time" small></ion-icon>
+            <p id="time-text">{{attraction.time +'min'}}</p>
+          </ion-col>
+          <ion-col align-self-center>
+            <ion-icon name="planet" small></ion-icon>
+            <a id="webpage-text" href=attraction.webpage>Webpage</a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
 
-  <ion-item class="comment-field">
-    <ion-label>TEST 1</ion-label>
-  </ion-item>
-  <ion-item class="comment-field">
+    <ion-item class="comment-field">
+      <ion-label>TEST 1</ion-label>
+    </ion-item>
+    <ion-item class="comment-field">
       <ion-label>TEST 2</ion-label>
     </ion-item>
 
-</ion-scroll>
-
+  </ion-scroll>
+</ion-content>
 <div class="footer">
   <ion-grid class="ion_grid">
     <ion-row class="ion_row">
