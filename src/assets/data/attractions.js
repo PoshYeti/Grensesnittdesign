@@ -299,7 +299,7 @@ export default
             "GUI_isOpen": false
         },
         {
-            "name": "Frognerparken",
+            "name": "Frogner Park",
             "desc": "The largest park in central parts of Oslo and a popular recreational area for people from all over the city. Inside the park you find Vigeland Sculpture Park, one of Oslo's most popular attractions.",
             "img": "frogner.jpg",
             "stars": 5,

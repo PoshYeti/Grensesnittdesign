@@ -43,33 +43,32 @@
 
   <p class=info>{{ 'FOR MORE HELP, PLEASE CONTACT' | translate}}</p>
   <p class=mail>support@support.com</p>
-
-  <div class="footer">
-    <ion-grid class="ion_grid">
-      <ion-row class="ion_row">
-        <ion-col col-3 class="col_home">
-          <button (click)="btnHome()" class="col_home, button_edit">
-            <img class="img_home" alt="Search" src="assets/imgs/home.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_search">
-          <button (click)="btnSearch()" class="col_search, button_edit">
-            <img class="img_search" alt="Search" src="assets/imgs/search.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_fav">
-          <button (click)="btnFavourites()" class="col_fav, button_edit">
-            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
-          </button>
-        </ion-col>
-        <ion-col col-3 class="col_seen">
-          <button (click)="btnSeen()" class="col_seen, button_edit">
-            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
 </ion-content>
+<div class="footer">
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3 class="col_home">
+        <button (click)="btnHome()" class="col_home, button_edit">
+          <img class="img_home" alt="Search" src="assets/imgs/home.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_search">
+        <button (click)="btnSearch()" class="col_search, button_edit">
+          <img class="img_search" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_fav">
+        <button (click)="btnFavourites()" class="col_fav, button_edit">
+          <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_seen">
+        <button (click)="btnSeen()" class="col_seen, button_edit">
+          <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 
 
