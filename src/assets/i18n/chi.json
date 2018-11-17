@@ -1,12 +1,18 @@
 {
-    "MUSEUM" : "博物館",
+    "MUSEUMS" : "博物館",
+    "Museums" : "博物館",
     "SHOPPING" : "購物",
-    "LANDMARK" : "界標",
-    "RESTAURANT" : "餐厅", 
+    "Shopping" : "購物",
+    "LANDMARKS" : "界標",
+    "Landmarks" : "界標",
+    "RESTAURANTS" : "餐厅",
+    "Restaurants" : "餐厅",
     "PARKS" : "公园",
+    "Parks" : "公园",
     "HOP ON/OFF"  : "總線",
-    "Hop on/off" : "總線",
+    "Hop On/Off" : "總線",
     "TOP 10" : "前十名", 
+    "Top 10" : "前十名",
     "PREPLANNED ROUTES" : "預先準備好的路線",
     "SETTINGS" : "設置",
     "HIGH CONTRAST" : "高對比度",
@@ -15,6 +21,8 @@
     "FAVOIRITES" : "嬖",
     "FAVOURITES" : "嬖",
     "FAQ:" : "經常問的問題",
+
+    
     "You can favorite an attraction by pressing the heart in the upper right corner of the attraction photo. Navigate to the favorites-page, that shows the attractions you have favorited, using the navigations bar at the bottom" 
     : "您可以通過按吸引力照片右上角的心臟來收藏一個景點。 使用底部的導航欄導航到最喜歡的頁面，該頁面顯示您最喜歡的景點",
     "SEARCH" : "搜索",
