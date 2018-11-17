@@ -1,3 +1,8 @@
+.col_home{background-color: white}
+.img_home{background-color: white}
+
+.pre_col{top: 15px;}
+
 .slide {
     height: 300px;
 }
@@ -6,4 +11,25 @@
 }
 .rot {
     margin-top:0px;
+}
+.info {
+    width: 100%;
+    margin-top: 0px;
+}
+.slide {
+    margin-bottom: 0px;
+    
+}
+.textinfo {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+    padding: 10px;
+    margin-bottom: 30%;
+}
+.top {
+    color: #FF6F75;
+    font-size: 18px;
 }

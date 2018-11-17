@@ -1,40 +1,93 @@
 <ion-header>
   <ion-navbar>  
     <ion-title>   
-      {{ 'FAMILY ROUTE' | translate }} 
+      {{ 'NATURES FRIEND' | translate }} 
       <button (click)="btnSettings()" clean>
-        <img class="img-settings" alt="settings" src="assets/imgs/settings.png">
+        <img class="img_header" alt="settings" src="assets/imgs/settings.png">
       </button>
     </ion-title>
   </ion-navbar>  
 </ion-header>
 
 <ion-content>
+
+
 <div class="slide">
 <ion-slides pager>
  
   <ion-slide style="background-color: white">
     <div class="rot">
-    <img class="img_route" alt="Search" src="assets/imgs/fred.png" height="200px;">
-    VIGELANDSPARKEN   
+    <img class="img_route" alt="Search" src="assets/imgs/vige.png" height="200px;">
+    {{ '1. VIGELAND PARK' | translate }}  
 </div>
 </ion-slide>
-   
+
+
   <ion-slide style="background-color: white">
-    <img class="img_route" alt="Search" src="assets/imgs/holm.png" height="200px;">
+    <img class="img_route" alt="Search" src="assets/imgs/vigemuseum.png" height="200px;">
+    {{ '2. VIGELAND MUSEUM' | translate }}
   </ion-slide>
 
   <ion-slide style="background-color: white">
-   <img class="img_route" alt="Search" src="assets/imgs/rad.png">
+    <img class="img_route" alt="Search" src="assets/imgs/sp.png" height="200px;">
+    {{ '3. THE PALACE PARK' | translate }}
+  </ion-slide> 
+
+  
+
+  <ion-slide style="background-color: white">
+   <img class="img_route" alt="Search" src="assets/imgs/bot.png">
+    {{ '4. BOTANICAL GARDEN' | translate }}
   </ion-slide>
 
   <ion-slide style="background-color: white">
-   <img class="img_route" alt="Search" src="assets/imgs/slott.png">
+   <img class="img_route" alt="Search" src="assets/imgs/akershus.png">
+   {{ '5. AKERHUS FORTRESS' | translate }}
   </ion-slide>
+
+<ion-slide style="background-color: white">
+   <img class="img_route" alt="Search" src="assets/imgs/rute.png">
+  </ion-slide>
+
 </ion-slides>
 </div>
+ <div class="info">
+<ion-item>
+ 
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-right>
+            
+             <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
+            Budget-friendly
+          </ion-col>
+          <ion-col align-self-center>
+            <ion-icon class="time-icon" name="time" small></ion-icon>
+           Estimated time: 3-4h 
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </ion-item>
+</div>
 
-
+ <div class=textinfo>
+    <p class=top> {{ '1. VIGELAND PARK' | translate }} </p>
+    <p class = under> {{ 'First spot is Vigeland Park, the words largest sculpural-park. All of the sculptures are made by the same sculpor, Gustav Vigeland. A great place to experience nature and art at the same time.' | translate }} </p>
+    
+    <p class=top> {{ '2. VIGELAND MUSEUM' | translate }}  </p>
+    <p class = under> {{ 'If you want to see even more of the sculptures, you can visit the museum at the same location. The museum do have an enterence-fee, but if you want the full experience - then this is for you.' | translate }}</p>
+    
+    <p class=top> {{ '3. PALACE PARK' | translate }}  </p>
+    <p class = under> {{ 'The trip continues in the Palace Park, right in the center of Oslo. This is the park that surrounds the royal Palace. Perfect place for a picknick/lunch break. You will also get to see the Palace, since it is right there.' | translate }}</p>
+   
+    <p class=top> {{ '4. BOTANICAL GARDEN' | translate }}  </p>
+    <p class = under> {{ 'Next stop is a beautiful big botanical garden located at Tøyen, that holds tons of different plantations.' | translate }}</p>
+   
+   
+    <p class=top> {{ '5. AKERSHUS FORTRESS' | translate }}  </p>
+    <p class = under> {{ 'Last stop on the tour is Akershus Fortress, located near Aker Brygge. Take a walk around the fortress, and get to the top to experience a stunning view over the city harbor. The perfect ending of a nature friendly tour' | translate }}</p> 
+  </div>
 
     <div class="footer">
     <ion-grid class="ion_grid">

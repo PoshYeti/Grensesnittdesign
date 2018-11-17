@@ -27,7 +27,7 @@
     </ion-buttons>
    <ion-segment color="dark"> 
      
-      <ion-segment-button  class=fam value="family" (click)="sortByFamily()">
+      <ion-segment-button  class=fam value="family" >
         {{ 'FAMILY' | translate }}
       </ion-segment-button>
       <ion-segment-button value="romantic">
@@ -51,55 +51,20 @@
 <br>
  <div class="cards">
   <ion-card padding="10px;">
-  <img src="assets/imgs/familie.png" (click)="openRoutes()"><img/>
+  <img src="assets/imgs/naturrute.png" (click)="openRoutes()"><img/>
   <ion-card-content>
-    <ion-card-title>
-      {{ 'FAMOUS ROUTE' | translate }}   
+    <ion-card-title (click)="openRoutes()">
+      
+      {{ 'NATURES FRIENDS' | translate  }}   
       </ion-card-title>
       <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
     <p>  
-    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
+    {{ 'See some of the most famous outdoor spots in Oslo. Five locations.' | translate }} 
     </p>
   </ion-card-content>
 </ion-card>
 
-  <ion-card padding="10px;">
-  <img src="assets/imgs/familie.png"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{ 'FAMOUS ROUTE' | translate }}   
-      </ion-card-title>
-      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
-    <p>  
-    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
-    </p>
-  </ion-card-content>
-</ion-card>
 
-  <ion-card padding="10px;">
-  <img src="assets/imgs/familie.png"/>
-  <ion-card-content>
-    <ion-card-title>
-      <p style="font-size: 12px;">{{ 'FAMOUS ROUTE' | translate }} </p>  
-      </ion-card-title>
-      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
-    <p>  
-    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
-    </p>
-  </ion-card-content>
-</ion-card>
-  <ion-card padding="10px;">
-  <img src="assets/imgs/familie.png"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{ 'FAMOUS ROUTE' | translate }}   
-      </ion-card-title>
-      <ion-icon class="icon-usd" name="logo-usd"></ion-icon>
-    <p>  
-    {{ 'See some of the most famous landmarks in Oslo.' | translate }} 
-    </p>
-  </ion-card-content>
-</ion-card>
 </div>
 <br>
 <br>
