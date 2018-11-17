@@ -5,6 +5,34 @@
     
 }
 
+.search-list {
+    background: $background-color;
+    height: 100%;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.section {
+    background: $background-color;
+    color: #000;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-header {
+    margin-bottom: 0px;
+}
+
+.section-active {
+    background: #FF6F75;
+    color: #000;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
 .title {
 position: relative;
     z-index: 20;
