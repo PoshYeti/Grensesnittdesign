@@ -54,13 +54,17 @@ page-home{
 
 .btn-TextBig{top: 40px;}
 
-.btn-Text, .btn-TextBig{
+.btn-Text, .btn-TextBig, .btn-TextPlanned, .btn-TextRoutes{
     position: relative;
     z-index: 20;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 95%;
 }
+
+.btn-TextPlanned{top: 50px; left: 15px;}
+
+.btn-TextRoutes{top: 25px;left: 35px;}
 
 .footer{
     z-index: 100;

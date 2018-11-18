@@ -64,11 +64,19 @@
 
     <button ion-button class="btn-route" (click)="btnPlanned()">
       <img class="btn-imgBig" alt="Preplanned routes" src="assets/imgs/preplanned.png">
-      <p class="btn-TextBig">{{ 'PREPLANNED ROUTES' | translate }}</p>
+      <ion-grid>
+        <ion-row>
+          <p class="btn-TextPlanned">{{ 'PREPLANNED' | translate }}</p>
+        </ion-row>
+        <ion-row>
+          <p class="btn-TextRoutes">{{ 'ROUTES' | translate }}</p>
+        </ion-row>
+      </ion-grid>
     </button>
   </div>
+</ion-content>
 
-  <div class="footer">
+<div class="footer">
     <ion-grid class="ion_grid">
       <ion-row class="ion_row">
         <ion-col col-3 class="col_home">
@@ -94,4 +102,3 @@
       </ion-row>
     </ion-grid>
   </div>
-</ion-content>
