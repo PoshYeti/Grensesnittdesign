@@ -3,8 +3,8 @@ import { NavController } from 'ionic-angular';
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
-import { FavouritesPage } from '../favourites/favourites';
 import { HomePage } from '../home/home';
+import { FavouritesPage } from '../favourites/favourites';
 import { VisitedPage } from '../visited/visited';
 
 @Component({
@@ -81,5 +81,5 @@ export class SearchPage {
   btnSeen() {
     this.navCtrl.push( VisitedPage );
   }
-
 }
+
