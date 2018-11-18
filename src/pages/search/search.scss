@@ -72,7 +72,28 @@ position: relative;
 
   }
 
+  .footer{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+    box-shadow: 0 -2px 2px 0px rgba($color: gray, $alpha: 0.7);
+    
+}
 
+.img_home, .img_search, .img_fav, .img_seen{
+    height: 40px;
+    position: relative;
+    justify-content: center;
+}
 
+.img_search, .img_fav, .img_seen{top: 4px;}
+
+.col_home{background-color: grayscale($color: #FF6F75)}
+
+.img_home{background-color: grayscale($color: #FF6F75)}
   
 

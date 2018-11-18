@@ -3,6 +3,9 @@ import { NavController } from 'ionic-angular';
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
+import { HomePage } from '../home/home';
+import { FavouritesPage } from '../favourites/favourites';
+import { VisitedPage } from '../visited/visited';
 
 @Component({
   selector: 'page-search',
@@ -60,6 +63,23 @@ export class SearchPage {
             return (attractions.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
         })
     }
+  }
+
+  //bottom-navbar
+  btnHome() {
+    this.navCtrl.push( HomePage );
+  }
+
+  btnSearch() {
+    this.navCtrl.push( SearchPage );
+  }
+
+  btnFavourites() {
+    this.navCtrl.push( FavouritesPage );
+  }
+
+  btnSeen() {
+    this.navCtrl.push( VisitedPage );
   }
 
 }
