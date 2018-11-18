@@ -11,7 +11,7 @@ export default
 {
     "attractions": [
          {
-            "name": "Holmenkollen - Museum and Tower",
+            "name": "Holmenkollen & Museum",
             "desc": "The ski museum in Holmenkollen, located underneath the famous ski jump, is the oldest of its kind in the world. The museum presents more than 4,000 years of skiing history, Norwegian polar exploration artifacts and an exhibition on snowboarding and modern skiing.",
             "img": "holmenkollen.jpg",
             "stars": 4,

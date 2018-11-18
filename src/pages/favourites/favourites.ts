@@ -20,7 +20,6 @@ export class FavouritesPage {
     this.favouriteAttractions = this.attractions.filter(obj => {
       return obj.favourite;
     })
-    console.log(this.favouriteAttractions);
   }
   isTop10(attraction: Card) {
     return attraction.tags.includes('Top 10');
