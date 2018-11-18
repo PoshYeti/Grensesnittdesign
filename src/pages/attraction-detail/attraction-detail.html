@@ -93,24 +93,24 @@
 
 
 
-    <h1>COMMENTS: </h1>
-    <hr>
+    <h1 style="text-align:center">COMMENTS</h1>
+    <hr id="hrTop">
 
-    <ion-list class="comment-list">
-      <ion-list-header *ngFor="let cmt of comments; let i = index">
-        <ion-label color="primary">{{exampleUser}}{{comments[i]}}</ion-label>
+    <ion-list id="comment-list">
+      <ion-list-header id="comment-list-header" *ngFor="let cmt of comments; let i = index">
+        <ion-label color="dark">{{exampleUser}}{{comments[i]}}</ion-label>
       </ion-list-header>
     </ion-list>
     <!--ion-item class="comment-test">
       <ion-label>{{commentString}}</ion-label>
     </ion-item-->
 
-    <hr>
+    <hr id="hrComments">
 
-    <ion-item>
-      <ion-label color="floatingText" type="text" text-center floating>Comment on {{attraction.name}}!</ion-label>
-      <ion-input color="primary" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
-        (keyup.enter)="commentEnterKey()" text-center ngDefaultControl floating>Comment on {{attraction.name}}!</ion-input>
+    <ion-item id="commentInputItem">
+      <ion-label id="commentInputLabel" color="light" type="text" text-center floating>Comment on {{attraction.name}}!</ion-label>
+      <ion-input id="commentInputField" color="dark" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
+        (keyup.enter)="commentEnterKey()" text-center ngDefaultControl floating>Comment on {{attraction.name}}...</ion-input>
     </ion-item>
 
   </ion-scroll>
