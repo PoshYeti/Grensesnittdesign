@@ -66,19 +66,23 @@
     <ion-item text-wrap id="bottom-text-container">
       <ion-grid>
         <ion-row>
-          <ion-col align-self-center>
+          <ion-col col-2></ion-col>
+          <ion-col col-5 align-self-right>
             <div class="bottom-column">
               <ion-icon id="address-icon" name="navigate" small></ion-icon>
               <p id="address-text">{{attraction.address}}</p>
             </div>
           </ion-col>
-          <ion-col align-self-center>
+          <ion-col col-4 align-self-center>
             <ion-icon id="time-icon" name="time" small></ion-icon>
             <p id="time-text">{{attraction.time +'min'}}</p>
           </ion-col>
+          <ion-col col-1></ion-col>
+        </ion-row>
+        <ion-row>
           <ion-col align-self-center>
             <ion-icon name="planet" small></ion-icon>
-            <a id="webpage-text" href={{attraction.webpage}}>Webpage</a>
+            <a id="webpage-text">{{attraction.webpage}}</a>
           </ion-col>
         </ion-row>
       </ion-grid>
