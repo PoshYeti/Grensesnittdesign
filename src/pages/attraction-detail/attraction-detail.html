@@ -85,7 +85,6 @@
     </ion-item>
 
 
-
     <ion-item text-wrap id="attraction-text-container">
       <h2 class="attraction-name-text">{{attraction.name}}</h2>
       <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
@@ -93,7 +92,7 @@
 
 
 
-    <p id="comments-header">COMMENTS</p>
+    <p id="comments-header">{{ 'COMMENTS' | translate  }} </p>
     <hr id="hrTop">
 
     <ion-list id="comment-list">
@@ -106,7 +105,7 @@
     </ion-item-->
 
     <ion-item id="commentInputItem">
-      <ion-label id="commentInputLabel" color="light" type="text" text-left fixed>Your comment: </ion-label>
+      <ion-label id="commentInputLabel" color="light" type="text" text-left fixed>{{ 'Your comment' | translate  }} : </ion-label>
       <ion-input id="commentInputField" color="dark" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
         (keyup.enter)="commentEnterKey()" text-left ngDefaultControl floating></ion-input>
     </ion-item>

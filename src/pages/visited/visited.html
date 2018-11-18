@@ -41,7 +41,7 @@
         <ion-grid>
           <ion-row justify-content-start>
             <ion-col col-4>
-              Rating:
+              {{ 'Rating' | translate  }}
             </ion-col>
             <ion-col col-8>
               <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
@@ -57,7 +57,7 @@
           </ion-row>
           <ion-row justify-content-start>
             <ion-col col-4>
-              Distance:
+              {{ 'Distance' | translate  }} 
             </ion-col>
             <ion-col col-8>
               <p id="distance-text">{{attraction.distance +'m'}}</p>
@@ -65,7 +65,7 @@
           </ion-row>
           <ion-row justify-content-start>
             <ion-col col-4>
-              Price:
+              {{ 'Price' | translate  }} 
             </ion-col>
             <ion-col col-8>
               <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
