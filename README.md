@@ -1,6 +1,6 @@
 # Grensesnittdesign
 
-<b>Dette må gjøres for å kunne kjøre prosjektet:<b>
+<b>Dette må gjøres for å kunne kjøre prosjektet:</b>
 
 Åpne Terminal/CMD og naviger deg til mappeplasseringen hvor du har lagret prosjektet
 - På Mac kan dette gjøres enkelt ved å skrive "cd", uten "", og deretter trekke inn mappen i Terminal vinduet
