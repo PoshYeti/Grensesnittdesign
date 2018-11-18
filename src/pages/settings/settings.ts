@@ -17,29 +17,29 @@ export class SettingsPage {
 
     lang:any;
 
-    constructor(public navCtrl: NavController, public translate: TranslateService) {
+    constructor( public navCtrl: NavController, public translate: TranslateService ) {
         this.lang = 'en';
         this.translate.setDefaultLang('en');
         this.translate.use('en');
     }
     switchLanguage() {
-        this.translate.use(this.lang);
+        this.translate.use( this.lang );
     }
     
     btnHome(){
-        this.navCtrl.push(HomePage);
+        this.navCtrl.push( HomePage );
     }
     
     btnSearch(){
-        this.navCtrl.push(SearchPage);
+        this.navCtrl.push( SearchPage );
     }
 
     btnFavourites(){
-        this.navCtrl.push(FavouritesPage);
+        this.navCtrl.push( FavouritesPage );
     }
 
     btnSeen(){
-        this.navCtrl.push(VisitedPage);
+        this.navCtrl.push( VisitedPage );
     }
 }
 

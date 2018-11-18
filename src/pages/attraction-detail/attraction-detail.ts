@@ -26,7 +26,7 @@ export class AttractionDetailPage {
   length: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.attraction = navParams.get('attraction');
+    this.attraction = navParams.get( 'attraction' );
   }
 
   ionViewDidLoad() {
@@ -34,40 +34,40 @@ export class AttractionDetailPage {
  
   }
 
-  onCommentChange(ev: any) {
+  onCommentChange( ev: any ) {
      const val = ev.target.value;
      this.commentString = val;
   }
 
   commentEnterKey(){
-    length = this.comments.push(this.commentString)
+    length = this.comments.push( this.commentString )
     this.commentString = "";
     for(let i in this.comments){
-      console.log(this.comments[i]);
+      console.log( this.comments[i] );
     }
   }
 
   btnHome(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
   
   btnSearch(){
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
   isTop10(attraction: Card) {
-    return attraction.tags.includes('Top 10');
+    return attraction.tags.includes( 'Top 10' );
   }
 
-  changeFavourite(attraction: Card) {
-    if (attraction.favourite) {
+  changeFavourite( attraction: Card ) {
+    if ( attraction.favourite ) {
       attraction.favourite = false;
     } else {
       attraction.favourite = true;
     }
   };
 
-  changeSeen(attraction: Card) {
-    if (attraction.seen) {
+  changeSeen( attraction: Card ) {
+    if ( attraction.seen ) {
       attraction.seen = false;
     } else {
       attraction.seen = true;
@@ -75,11 +75,11 @@ export class AttractionDetailPage {
   }
 
   btnFavourites(){
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen(){
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
   
 

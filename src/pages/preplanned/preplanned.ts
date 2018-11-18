@@ -13,30 +13,30 @@ import { SettingsPage } from '../settings/settings';
 })
 export class PreplannedPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor( public navCtrl: NavController ) {
 
   }
    openRoutes(){
-    this.navCtrl.push(RoutesPage);
+    this.navCtrl.push( RoutesPage );
   }
 
   btnSettings() {
-    this.navCtrl.push(SettingsPage);
+    this.navCtrl.push( SettingsPage );
   }
 
   btnHome(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
   
   btnSearch(){
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites(){
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen(){
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 }

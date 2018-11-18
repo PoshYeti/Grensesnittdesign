@@ -7,7 +7,7 @@ import { AttractionDetailPage } from './attraction-detail';
     AttractionDetailPage,
   ],
   imports: [
-    IonicPageModule.forChild(AttractionDetailPage),
+    IonicPageModule.forChild( AttractionDetailPage ),
   ],
 })
 export class AttractionDetailPageModule {}

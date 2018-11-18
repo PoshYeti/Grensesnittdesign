@@ -14,54 +14,55 @@ import { PreplannedPage } from '../preplanned/preplanned';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor( public navCtrl: NavController ) {
 
   }
 
   btnSettings(){
-    this.navCtrl.push(SettingsPage);
+    this.navCtrl.push( SettingsPage );
   }
 
   
 
   btnPlanned(){
-    this.navCtrl.push(PreplannedPage);
+    this.navCtrl.push( PreplannedPage );
   }
 
 
-  attBtnClick(type: string, icon: string) {
+  attBtnClick( type: string, icon: string ) {
     this.navCtrl.push(Top10Page, {
       type: type,
       icon: icon
     });
   }
 
-  attBtnClickMuseum(type: string, icon: string) {
+  attBtnClickMuseum( type: string, icon: string ) {
     this.navCtrl.push(Top10Page, { 
       type: type,
       icon: icon
     });
   }
  
-  attBtnClickRoute(type: string) {
-    this.navCtrl.push(Top10Page, { type: type });
+  attBtnClickRoute( type: string ) {
+    this.navCtrl.push( Top10Page, { 
+      type: type } );
   }
 
 //bottom-navbar
   btnHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
 
   btnSearch() {
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites() {
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen() {
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 
 }
