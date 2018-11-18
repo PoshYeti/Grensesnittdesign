@@ -47,21 +47,21 @@
 }
 
 #commentInputLabel {
-    color: #fff;
+    color: #000;
 }
 
-#commentInputItem, #commentInputField {
-    background-color: rgb(158, 75, 75);
+#commentInputField {
+    background-color: #fff;
+}
+
+#commentInputItem {
+    background-color: rgb(238, 155, 155);
+    border: 1px solid rgb(238, 155, 155);
 }
 
 #hrTop {
     border-top: 3px solid color($colors, primary);
 }
-
-#hrComments {
-    border-top: 1px solid color($colors, primary);
-}
-
 
 #attraction-image-text-container{
     height: 35px;

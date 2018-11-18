@@ -93,7 +93,7 @@
 
 
 
-    <h1 style="text-align:center">COMMENTS</h1>
+    <h3 style="text-align:center">COMMENTS</h3>
     <hr id="hrTop">
 
     <ion-list id="comment-list">
@@ -105,12 +105,10 @@
       <ion-label>{{commentString}}</ion-label>
     </ion-item-->
 
-    <hr id="hrComments">
-
     <ion-item id="commentInputItem">
-      <ion-label id="commentInputLabel" color="light" type="text" text-center floating>Comment on {{attraction.name}}!</ion-label>
+      <ion-label id="commentInputLabel" color="light" type="text" text-left fixed>Comment: </ion-label>
       <ion-input id="commentInputField" color="dark" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
-        (keyup.enter)="commentEnterKey()" text-center ngDefaultControl floating>Comment on {{attraction.name}}...</ion-input>
+        (keyup.enter)="commentEnterKey()" text-left ngDefaultControl floating></ion-input>
     </ion-item>
 
   </ion-scroll>
