@@ -42,63 +42,31 @@
 </ion-list>
 </ion-content>
 
-<!--
-<ion-content class="content" align="center">
-<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-<ion-list>
-  <ion-item *ngFor="let attraction of attractions">
-    <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon> {{ attraction.name }}
-  </ion-item>
-</ion-list>
--->
-<!--
-<ion-card *ngFor="let attraction of attractions" (click)="openAttractionDetails(attraction)">
-
-    <div id="img-container">
-      <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}">
-      <button ion-fab class="btn-fab-check">
-        <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
-      </button>
-      <button ion-fab class="btn-fab-favourite">
-        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-      </button>
-
-    </div>
-
-    <ion-item text-wrap class="background-color">
-      <ion-icon id="attraction-icon" [name]=attraction.icon item-start large></ion-icon>
-      <h2 class="attraction-text">{{attraction.name}}</h2>
-      <p class="attraction-text">{{attraction.desc}}</p>
-    </ion-item>
-
-    <ion-grid id="bottom-bar">
-      <ion-row>
-        <ion-col>
-          <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 2" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 3" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars > 4" class="icon-star" name="star" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 2" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 3" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 4" class="icon-star" name="star-outline" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
+<div class="footer">
+    <ion-grid class="ion_grid">
+      <ion-row class="ion_row">
+        <ion-col col-3 class="col_home">
+          <button (click)="btnHome()" class="button_edit, col_home">
+            <img class="img_home" alt="Search" src="assets/imgs/home.png">
+          </button>
         </ion-col>
-        <ion-col>
-          <p>{{attraction.distance +'m'}}</p>
+        <ion-col col-3 class="col_search">
+          <button (click)="btnSearch()" class="col_search, button_editGray">
+            <img class="img_search" alt="Search" src="assets/imgs/search.png">
+          </button>
         </ion-col>
-        <ion-col>
-          <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 1" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 2" class="icon-usd" name="logo-usd" item-start small></ion-icon>
-          <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+        <ion-col col-3 class="col_fav">
+          <button (click)="btnFavourites()" class="col_fav, button_edit">
+            <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+          </button>
+        </ion-col>
+        <ion-col col-3 class="col_seen">
+          <button (click)="btnSeen()" class="col_seen, button_edit">
+            <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+          </button>
         </ion-col>
       </ion-row>
     </ion-grid>
-
-  </ion-card>
--->
-</ion-content>
+  </div>
 
 
