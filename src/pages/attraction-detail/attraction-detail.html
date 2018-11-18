@@ -18,18 +18,7 @@
 
 
   <ion-scroll scrollY="true" style="white-space:nowrap; height: 900px;">
-    <div id="img-container">
-      <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-      <button ion-fab class="btn-fab-check">
-        <ion-checkbox class="checkbox" checked={{attraction.seen}}></ion-checkbox>
-      </button>
-      <button ion-fab class="btn-fab-favourite">
-        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
-        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
-
-      </button>
-    </div>
 
     <div id="attraction-image-text-container">
       <ion-grid>
@@ -58,12 +47,22 @@
       </ion-grid>
     </div>
 
+    <div id="img-container">
+      <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}">
 
-    <ion-item text-wrap id="attraction-text-container">
-      <h2 class="attraction-name-text">{{attraction.name}}</h2>
-      <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
-    </ion-item>
+      <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
+        <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
+        <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
+      </button>
+      <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
+        <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+        <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+      </button>
+      <div id="trophy-container" *ngIf="isTop10(attraction)">
+        <img id="top10-icon" alt="Top 10" src="assets/imgs/star.png">
+      </div>
 
+    </div>
     <ion-item text-wrap id="bottom-text-container">
       <ion-grid>
         <ion-row>
@@ -85,12 +84,21 @@
       </ion-grid>
     </ion-item>
 
+
+
+    <ion-item text-wrap id="attraction-text-container">
+      <h2 class="attraction-name-text">{{attraction.name}}</h2>
+      <p class="attraction-name-text">{{ attraction.desc | translate}}</p>
+    </ion-item>
+
+
+
     <h1>COMMENTS: </h1>
     <hr>
 
     <ion-list class="comment-list">
       <ion-list-header *ngFor="let cmt of comments; let i = index">
-          <ion-label color="primary">{{exampleUser}}{{comments[i]}}</ion-label>
+        <ion-label color="primary">{{exampleUser}}{{comments[i]}}</ion-label>
       </ion-list-header>
     </ion-list>
     <!--ion-item class="comment-test">
@@ -101,7 +109,8 @@
 
     <ion-item>
       <ion-label color="floatingText" type="text" text-center floating>Comment on {{attraction.name}}!</ion-label>
-      <ion-input color="primary" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)" (keyup.enter)="commentEnterKey()" text-center ngDefaultControl floating>Comment on {{attraction.name}}!</ion-input>
+      <ion-input color="primary" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
+        (keyup.enter)="commentEnterKey()" text-center ngDefaultControl floating>Comment on {{attraction.name}}!</ion-input>
     </ion-item>
 
   </ion-scroll>
