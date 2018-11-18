@@ -36,7 +36,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
   <div class="cards">
   <ion-card *ngFor="let attraction of attractionsByCat">
     <div id="img-container">
@@ -82,11 +82,15 @@
           <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
         </ion-col>
       </ion-row>
-      <ion-row class="spacing"></ion-row>
+     
     </ion-grid>
   </ion-card>
   </div>
+
+  <div id="bottom-padding"></div>
 </ion-content>
+
+<ion-footer>
 <div class="footer">
   <ion-grid class="ion_grid">
     <ion-row class="ion_row">
@@ -113,3 +117,4 @@
     </ion-row>
   </ion-grid>
 </div>
+</ion-footer>
