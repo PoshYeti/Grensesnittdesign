@@ -1,11 +1,108 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        {{ 'FAVOURITES' | translate }}
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-  </ion-content>
-  
+  <ion-navbar>
+    <ion-title>
+      {{ 'FAVOURITES' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let attraction of favouriteAttractions">
+
+    <div id="content">
+
+      <div id="img-container">
+
+        <img class="img_attraction" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)">
+
+        <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
+          <ion-icon *ngIf="attraction.seen" name="checkbox-outline"></ion-icon>
+          <ion-icon *ngIf="!attraction.seen" name="square-outline"></ion-icon>
+        </button>
+        <button ion-fab class="btn-fab-favourite" (click)="changeFavourite(attraction)">
+          <ion-icon *ngIf="attraction.favourite" name="heart"></ion-icon>
+          <ion-icon *ngIf="!attraction.favourite" name="heart-outline"></ion-icon>
+        </button>
+        <div id="trophy-container" *ngIf="isTop10(attraction)">
+          <img id="top10-icon" alt="Top 10" src="assets/imgs/star.png">
+        </div>
+
+      </div>
+
+      <div id="text-container" (click)="openAttractionDetails(attraction)">
+
+        <h2 id="name-text">{{attraction.name}}</h2>
+
+
+        <ion-grid>
+          <ion-row justify-content-start>
+            <ion-col col-4>
+              Rating:
+            </ion-col>
+            <ion-col col-8>
+              <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars > 2" class="icon-star" name="star" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars > 3" class="icon-star" name="star" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars > 4" class="icon-star" name="star" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars < 2" class="icon-star" name="star-outline" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars < 3" class="icon-star" name="star-outline" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars < 4" class="icon-star" name="star-outline" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-start>
+            <ion-col col-4>
+              Distance:
+            </ion-col>
+            <ion-col col-8>
+              <p id="distance-text">{{attraction.distance +'m'}}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-start>
+            <ion-col col-4>
+              Price:
+            </ion-col>
+            <ion-col col-8>
+              <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.price > 1" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.price > 2" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+              <ion-icon *ngIf="attraction.price > 3" class="icon-usd" name="logo-usd" item-start small></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+      </div>
+    </div>
+
+  </ion-card>
+
+</ion-content>
+<div class="footer">
+  <ion-grid class="ion_grid">
+    <ion-row class="ion_row">
+      <ion-col col-3 class="col_home">
+        <button (click)="btnHome()" class="col_home, button_edit">
+          <img class="img_home" alt="Search" src="assets/imgs/home.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_search">
+        <button (click)="btnSearch()" class="col_search, button_edit">
+          <img class="img_search" alt="Search" src="assets/imgs/search.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_fav">
+        <button (click)="btnFavourites()" class="col_fav, button_edit">
+          <img class="img_fav" alt="Search" src="assets/imgs/heart.png">
+        </button>
+      </ion-col>
+      <ion-col col-3 class="col_seen">
+        <button (click)="btnSeen()" class="col_seen, button_edit">
+          <img class="img_seen" alt="settings" src="assets/imgs/check.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

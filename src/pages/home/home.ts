@@ -22,21 +22,7 @@ export class HomePage {
     this.navCtrl.push(SettingsPage);
   }
 
-  btnHome(){
-    this.navCtrl.push(HomePage);
-  }
   
-  btnSearch(){
-    this.navCtrl.push(SearchPage);
-  }
-
-  btnFavourites(){
-    this.navCtrl.push(FavouritesPage);
-  }
-
-  btnSeen(){
-    this.navCtrl.push(VisitedPage);
-  }
 
   btnPlanned(){
     this.navCtrl.push(PreplannedPage);
@@ -60,4 +46,22 @@ export class HomePage {
   attBtnClickRoute(type: string) {
     this.navCtrl.push(Top10Page, { type: type });
   }
+
+//bottom-navbar
+  btnHome() {
+    this.navCtrl.push(HomePage);
+  }
+
+  btnSearch() {
+    this.navCtrl.push(SearchPage);
+  }
+
+  btnFavourites() {
+    this.navCtrl.push(FavouritesPage);
+  }
+
+  btnSeen() {
+    this.navCtrl.push(VisitedPage);
+  }
+
 }

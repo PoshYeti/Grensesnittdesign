@@ -1,3 +1,44 @@
 page-favourites{
+    #content{
+        height: 100px;
+        margin: auto;
+       
+    }
     
+    #img-container{
+        width: 40%;
+        height: 100px;
+        float: left;
+    }
+
+    .img_attraction{
+        height: 100%;
+        width: 100%;
+    }
+
+    .btn-fab-favourite{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px ;
+        z-index: 2;
+    }
+
+    #text-container{
+        margin-left: 45%;
+        padding-top: 3%;
+    }
+
+    #name-text{
+        border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
+        margin-bottom: 3%;
+    }
+
+    ion-row{
+       text-align: left;
+}
+
 }
