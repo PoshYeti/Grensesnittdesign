@@ -93,12 +93,12 @@
 
 
 
-    <h6 style="text-align:center">COMMENTS</h6>
+    <p id="comments-header">COMMENTS</p>
     <hr id="hrTop">
 
     <ion-list id="comment-list">
       <ion-list-header id="comment-list-header" *ngFor="let cmt of comments; let i = index">
-        <ion-label color="dark">{{exampleUser}}{{comments[i]}}</ion-label>
+        <ion-label id="comments-label" color="dark">{{exampleUser}}{{comments[i]}}</ion-label>
       </ion-list-header>
     </ion-list>
     <!--ion-item class="comment-test">
@@ -106,7 +106,7 @@
     </ion-item-->
 
     <ion-item id="commentInputItem">
-      <ion-label id="commentInputLabel" color="light" type="text" text-left fixed>Comment: </ion-label>
+      <ion-label id="commentInputLabel" color="light" type="text" text-left fixed>Your comment: </ion-label>
       <ion-input id="commentInputField" color="dark" type="text" [(ngModel)]="commentString" (ionInput)="onCommentChange($event)"
         (keyup.enter)="commentEnterKey()" text-left ngDefaultControl floating></ion-input>
     </ion-item>

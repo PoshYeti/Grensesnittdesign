@@ -1,6 +1,6 @@
 # Grensesnittdesign
 
-Dette må gjøres for å kunne kjøre prosjektet:
+<b>Dette må gjøres for å kunne kjøre prosjektet:</b>
 
 Åpne Terminal/CMD og naviger deg til mappeplasseringen hvor du har lagret prosjektet
 - På Mac kan dette gjøres enkelt ved å skrive "cd", uten "", og deretter trekke inn mappen i Terminal vinduet
@@ -32,3 +32,6 @@ Når prosjektet er ferdig bygd med alle de nødvendige filene, kan du se en live
 ```
 ionic serve --lab
 ```
+
+Hvis det er noen problemer for å få lastet ned nødvendige filer, kan denne videoen være til hjelp:
+https://www.youtube.com/watch?v=4uiM0UVf44U
