@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { applySourceSpanToStatementIfNeeded } from '@angular/compiler/src/output/output_ast';
 import attractions from '../../assets/data/attractions';
 import { Card } from './attractions.interface';
 import { FavouritesPage } from '../favourites/favourites';

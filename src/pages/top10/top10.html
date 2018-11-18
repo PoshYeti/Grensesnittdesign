@@ -36,9 +36,9 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content padding>
   <div class="cards">
-  <ion-card padding="10px;" padding *ngFor="let attraction of attractionsByCat">
+  <ion-card *ngFor="let attraction of attractionsByCat">
     <div id="img-container">
       <img id="attraction-img" src="{{'../../assets/imgs/' + attraction.img}}" (click)="openAttractionDetails(attraction)">
       <button ion-fab class="btn-fab-check" (click)="changeSeen(attraction)">
@@ -61,7 +61,7 @@
 
     <ion-grid id="bottom-bar">
       <ion-row>
-        <ion-col>
+        <ion-col col-5>
           <ion-icon *ngIf="attraction.stars > 0" class="icon-star" name="star" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.stars > 1" class="icon-star" name="star" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.stars > 2" class="icon-star" name="star" item-start small></ion-icon>
@@ -72,10 +72,10 @@
           <ion-icon *ngIf="attraction.stars < 4" class="icon-star" name="star-outline" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.stars < 5" class="icon-star" name="star-outline" item-start small></ion-icon>
         </ion-col>
-        <ion-col>
+        <ion-col col-3>
           <p>{{attraction.distance +'m'}}</p>
         </ion-col>
-        <ion-col>
+        <ion-col col-4>
           <ion-icon *ngIf="attraction.price > 0" class="icon-usd" name="logo-usd" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.price > 1" class="icon-usd" name="logo-usd" item-start small></ion-icon>
           <ion-icon *ngIf="attraction.price > 2" class="icon-usd" name="logo-usd" item-start small></ion-icon>

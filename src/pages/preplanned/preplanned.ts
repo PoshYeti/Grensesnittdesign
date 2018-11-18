@@ -5,7 +5,6 @@ import { FavouritesPage } from '../favourites/favourites';
 import { HomePage } from '../home/home';
 import { VisitedPage } from '../visited/visited';
 import { SearchPage } from '../search/search';
-import { AttractionDetailPage } from '../attraction-detail/attraction-detail';
 import { SettingsPage } from '../settings/settings';
 
 @Component({
