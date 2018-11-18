@@ -26,7 +26,8 @@ export class AttractionDetailPage {
   length: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.attraction = navParams.get( 'attraction' );
+    this.attraction = navParams.get('attraction');
+    this.comments.push('This attraction is super awesome!');
   }
 
   ionViewDidLoad() {
