@@ -18,39 +18,39 @@ export class RoutesPage {
   attraction: Card[];
 
 
-  constructor(public navCtrl: NavController) {
+  constructor( public navCtrl: NavController ) {
     this.attractions = attractions.attractions;
 
   }
 
-  attractionClick(attractionName: string){
+  attractionClick( attractionName: string ){
     
     this.attraction = this.attractions.filter(obj => {
-      return obj.name.includes(attractionName);
+      return obj.name.includes( attractionName );
     });
-    console.log(this.attraction);
+    console.log( this.attraction );
     let attraction = this.attraction[0];
     this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
   btnSettings() {
-    this.navCtrl.push(SettingsPage);
+    this.navCtrl.push( SettingsPage );
   }
 
   btnHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
 
   btnSearch() {
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites() {
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen() {
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 
 }

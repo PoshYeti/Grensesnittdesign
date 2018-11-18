@@ -15,7 +15,7 @@ export class SearchPage {
     attractions: Card[];
     
 
-  constructor(public navCtrl: NavController) {
+  constructor( public navCtrl: NavController ) {
     this.initializeAttractions();
   }
   
@@ -23,15 +23,15 @@ export class SearchPage {
     this.attractions = attractions.attractions;
   }
   
-  toggleSection(i) {
+  toggleSection( i ) {
     this.attractions[i].GUI_isOpen = !this.attractions[i].GUI_isOpen;
   }
   
-  openAttractionDetails(attraction: Card) {
+  openAttractionDetails( attraction: Card)  {
     this.navCtrl.push(AttractionDetailPage, { attraction });
   }
   
-  changeSeen(attraction: Card){
+  changeSeen( attraction: Card ){
     if(attraction.seen) {
       attraction.seen = false;
     } else {
@@ -39,19 +39,19 @@ export class SearchPage {
     }
   }
   
-  changeFavourite(attraction: Card) {
-    if(attraction.favourite) {
+  changeFavourite( attraction: Card ) {
+    if( attraction.favourite ) {
       attraction.favourite = false;
     } else {
       attraction.favourite = true;
     }
   };
   
-  isTop10(attraction: Card){
+  isTop10( attraction: Card ){
       return attraction.tags.includes('Top 10');
   }
   
-  getItems(ev: any) {
+  getItems( ev: any ) {
     this.initializeAttractions();
     const val = ev.target.value;
     

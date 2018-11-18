@@ -29,7 +29,7 @@ export class Top10Page {
   pageIcon: string;
   toolbarColor: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public navCtrl: NavController, public navParams: NavParams ) {
     this.pageType = navParams.get('type');
     this.pageIcon = navParams.get('icon');
     if(this.pageType == 'Top 10'){
@@ -53,11 +53,11 @@ export class Top10Page {
   }
 
 
-  openAttractionDetails(attraction: Card) {
+  openAttractionDetails( attraction: Card ) {
     this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
-  changeFavourite(attraction: Card) {
+  changeFavourite( attraction: Card ) {
     if(attraction.favourite) {
       attraction.favourite = false;
     } else {
@@ -65,7 +65,7 @@ export class Top10Page {
     }
   };
 
-  changeSeen(attraction: Card){
+  changeSeen( attraction: Card ){
     if(attraction.seen) {
       attraction.seen = false;
     } else {
@@ -73,7 +73,7 @@ export class Top10Page {
     }
   }
 
-  isTop10(attraction: Card){
+  isTop10( attraction: Card ){
       return attraction.tags.includes('Top 10');
   }
 
@@ -97,22 +97,22 @@ export class Top10Page {
   }
 
   btnSettings() {
-    this.navCtrl.push(SettingsPage);
+    this.navCtrl.push( SettingsPage );
   }
 
   btnHome(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
   
   btnSearch(){
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites(){
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen(){
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 }

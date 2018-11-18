@@ -15,50 +15,50 @@ export class FavouritesPage {
   attractions: Card[];
   favouriteAttractions: Card[];
 
-  constructor(public navCtrl: NavController) {
+  constructor( public navCtrl: NavController ) {
     this.attractions = attractions.attractions;
     this.favouriteAttractions = this.attractions.filter(obj => {
       return obj.favourite;
     })
   }
-  isTop10(attraction: Card) {
+  isTop10( attraction: Card ) {
     return attraction.tags.includes('Top 10');
   }
 
-  changeFavourite(attraction: Card) {
-    if (attraction.favourite) {
+  changeFavourite( attraction: Card ) {
+    if ( attraction.favourite ) {
       attraction.favourite = false;
     } else {
       attraction.favourite = true;
     }
   };
 
-  changeSeen(attraction: Card) {
-    if (attraction.seen) {
+  changeSeen( attraction: Card ) {
+    if ( attraction.seen ) {
       attraction.seen = false;
     } else {
       attraction.seen = true;
     }
   }
 
-  openAttractionDetails(attraction: Card) {
-    this.navCtrl.push(AttractionDetailPage, { attraction });
+  openAttractionDetails( attraction: Card ) {
+    this.navCtrl.push( AttractionDetailPage, { attraction } );
   }
 
   //bottom-navbar
   btnHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
 
   btnSearch() {
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites() {
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen() {
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 }

@@ -22,11 +22,11 @@ export class VisitedPage {
       return obj.seen;
     })
   }
-  isTop10(attraction: Card) {
+  isTop10( attraction: Card ) {
     return attraction.tags.includes('Top 10');
   }
 
-  changeFavourite(attraction: Card) {
+  changeFavourite( attraction: Card ) {
     if (attraction.favourite) {
       attraction.favourite = false;
     } else {
@@ -34,7 +34,7 @@ export class VisitedPage {
     }
   };
 
-  changeSeen(attraction: Card) {
+  changeSeen( attraction: Card ) {
     if (attraction.seen) {
       attraction.seen = false;
     } else {
@@ -42,25 +42,25 @@ export class VisitedPage {
     }
   }
 
-  openAttractionDetails(attraction: Card) {
+  openAttractionDetails( attraction: Card ) {
     this.navCtrl.push(AttractionDetailPage, { attraction });
   }
 
   //bottom-navbar
   btnHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push( HomePage );
   }
 
   btnSearch() {
-    this.navCtrl.push(SearchPage);
+    this.navCtrl.push( SearchPage );
   }
 
   btnFavourites() {
-    this.navCtrl.push(FavouritesPage);
+    this.navCtrl.push( FavouritesPage );
   }
 
   btnSeen() {
-    this.navCtrl.push(VisitedPage);
+    this.navCtrl.push( VisitedPage );
   }
 
 }

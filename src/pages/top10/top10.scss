@@ -57,16 +57,12 @@ ion-title{
 }
 
 #header-icon-text-container{
-    position: relative;
     margin-top: 20px;
- 
 }
 
 #icon-header{
-    position: absolute;
+    
     height: 20px;
-    left: 32%;
-    top: 0px;
     
 }
 
@@ -155,4 +151,8 @@ ion-row{
     margin-top: 5px;
     padding-top: 5px;
     border-top: 1px solid rgba($color: gray, $alpha: 0.5)
+}
+
+#bottom-padding{
+    height: 50px;
 }
