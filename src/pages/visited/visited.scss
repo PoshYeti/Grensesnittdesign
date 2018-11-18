@@ -5,7 +5,11 @@ page-visited{
        
     }
 
-    .col_home, .col_search, .col_fav, .col_seen{
+    .col_seen, .img_seen, .button_editGray{
+        background-color: lightgray;
+    }
+
+    .img_home, .img_search, .img_fav, .img_seen{
         left: 20px;
     }
     
